@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{project_name}-{won}",
+ "creation": "2023-03-21 18:15:08.554304",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "daily_progress",
+  "mashhor_project",
+  "column_break_4",
+  "date",
+  "section_break_6",
+  "activity_table",
+  "next_day_activity",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "daily_progress",
+   "fieldtype": "Data",
+   "label": "Daily Progress"
+  },
+  {
+   "fieldname": "mashhor_project",
+   "fieldtype": "Link",
+   "label": "Mashhor Project",
+   "options": "Mashhor Project"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "activity_table",
+   "fieldtype": "Table",
+   "label": "Activity Table",
+   "options": "Execution DPR Activity Table"
+  },
+  {
+   "fieldname": "next_day_activity",
+   "fieldtype": "Table",
+   "label": "Next Day Activity",
+   "options": "Next Day Execution DPR Activity Table"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Project Execution DPR",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-21 20:24:01.832593",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Project Execution DPR",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

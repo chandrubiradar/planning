@@ -1,0 +1,270 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-05 17:28:51.597162",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cert_no",
+  "client",
+  "project",
+  "location",
+  "column_break_5",
+  "area",
+  "date_of_handover",
+  "won_no__po_no",
+  "section_break_9",
+  "bsp_12std0810______the_welding_of_metals",
+  "bsp_12std0204__design_of_onshore_civil_and_structural_works",
+  "bsp_12std0910__paintingcoating_of_production",
+  "bsp_12std0103__bolt_torquing",
+  "dep_62100811_gen__inspection_n_functional_testing",
+  "column_break_13",
+  "dep_61402030_gen__welding_of_pipelines_and_related_facilities",
+  "bsp_12std0102__leak_testing",
+  "data_16",
+  "bsp_12std0104_pressure_testing_of_pipework",
+  "data_18",
+  "other",
+  "section_break_22",
+  "remarks",
+  "_section",
+  "prepared_by",
+  "name1",
+  "signature",
+  "date",
+  "column_break_29",
+  "verified_by",
+  "name_",
+  "signature_",
+  "date_",
+  "column_break_34",
+  "accepted_by",
+  "name__",
+  "signature__",
+  "date__"
+ ],
+ "fields": [
+  {
+   "fieldname": "cert_no",
+   "fieldtype": "Data",
+   "label": "CERT No"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "Project"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "date_of_handover",
+   "fieldtype": "Data",
+   "label": "Date Of HandOver"
+  },
+  {
+   "fieldname": "won_no__po_no",
+   "fieldtype": "Link",
+   "label": "WON No / PO No",
+   "options": "Project"
+  },
+  {
+   "default": "0",
+   "fieldname": "bsp_12std0810______the_welding_of_metals",
+   "fieldtype": "Check",
+   "label": "BSP_12.STD.08.1.0      The Welding of Metals"
+  },
+  {
+   "default": "0",
+   "fieldname": "bsp_12std0204__design_of_onshore_civil_and_structural_works",
+   "fieldtype": "Check",
+   "label": "BSP_12.STD.02.04  Design of onshore civil and structural works"
+  },
+  {
+   "default": "0",
+   "fieldname": "bsp_12std0910__paintingcoating_of_production",
+   "fieldtype": "Check",
+   "label": "BSP_12.STD.09.1.0  Painting/Coating of Production"
+  },
+  {
+   "default": "0",
+   "fieldname": "bsp_12std0103__bolt_torquing",
+   "fieldtype": "Check",
+   "label": "BSP_12.STD.01.03  Bolt Torquing"
+  },
+  {
+   "default": "0",
+   "fieldname": "dep_62100811_gen__inspection_n_functional_testing",
+   "fieldtype": "Check",
+   "label": "DEP_62.10.08.11_Gen  Inspection n functional Testing "
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "dep_61402030_gen__welding_of_pipelines_and_related_facilities",
+   "fieldtype": "Check",
+   "label": "DEP_61.40.20.30_Gen  Welding of Pipelines and Related Facilities  "
+  },
+  {
+   "default": "0",
+   "fieldname": "bsp_12std0102__leak_testing",
+   "fieldtype": "Check",
+   "label": "BSP_12.STD.01.02  Leak Testing"
+  },
+  {
+   "default": "0",
+   "fieldname": "data_16",
+   "fieldtype": "Check",
+   "label": "DEP_31.40.40.38_Gen Hydrostatic Testing of New Pipeline"
+  },
+  {
+   "default": "0",
+   "fieldname": "bsp_12std0104_pressure_testing_of_pipework",
+   "fieldtype": "Check",
+   "label": "BSP_12.STD.01.04 Pressure Testing of Pipework "
+  },
+  {
+   "default": "0",
+   "fieldname": "data_18",
+   "fieldtype": "Check",
+   "label": "DEP_63.10.08.11_Gen  Field Commissioning of Electrical Installation n Equipment for global application"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "other",
+   "fieldtype": "Check",
+   "label": "Other"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "_section",
+   "fieldtype": "Section Break",
+   "label": " "
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Heading",
+   "label": "PREPARED BY"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Heading",
+   "label": "VERIFIED BY"
+  },
+  {
+   "fieldname": "name_",
+   "fieldtype": "Data",
+   "label": "Name_"
+  },
+  {
+   "fieldname": "signature_",
+   "fieldtype": "Signature",
+   "label": "Signature_"
+  },
+  {
+   "fieldname": "date_",
+   "fieldtype": "Date",
+   "label": "Date_"
+  },
+  {
+   "fieldname": "accepted_by",
+   "fieldtype": "Heading",
+   "label": "ACCEPTED BY"
+  },
+  {
+   "fieldname": "name__",
+   "fieldtype": "Data",
+   "label": "Name__"
+  },
+  {
+   "fieldname": "signature__",
+   "fieldtype": "Signature",
+   "label": "Signature__"
+  },
+  {
+   "fieldname": "date__",
+   "fieldtype": "Date",
+   "label": "Date__"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-05 19:34:13.445530",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Certificate Of Acceptance",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

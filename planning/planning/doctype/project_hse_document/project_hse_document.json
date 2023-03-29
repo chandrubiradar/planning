@@ -1,0 +1,199 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:HSE-{project_id}",
+ "creation": "2023-02-20 17:39:30.016732",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "contract",
+  "completed",
+  "column_break_4",
+  "project_id",
+  "status",
+  "column_break_8",
+  "target_completion_date",
+  "hra_section_section",
+  "hra",
+  "column_break_11",
+  "hra_percentage_completed",
+  "column_break_13",
+  "hra_status",
+  "erp_section_section",
+  "erp",
+  "column_break_17",
+  "erp_percentage_completed",
+  "column_break_19",
+  "erp_status",
+  "hazid_section_section",
+  "hazid",
+  "column_break_23",
+  "hazid_percentage_completed",
+  "column_break_25",
+  "hazid_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "HSE-.####"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Contract",
+   "options": "Contract",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "target_completion_date",
+   "fieldtype": "Date",
+   "label": "Target Completion Date"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_id",
+   "fieldtype": "Data",
+   "label": "Project ID"
+  },
+  {
+   "fieldname": "completed",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "%Completed"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+  },
+  {
+   "fieldname": "hra_section_section",
+   "fieldtype": "Section Break",
+   "label": "HRA Section"
+  },
+  {
+   "fieldname": "hra",
+   "fieldtype": "Attach",
+   "label": "HRA"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hra_percentage_completed",
+   "fieldtype": "Data",
+   "label": "HRA Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "hra_status",
+   "fieldtype": "Select",
+   "label": "HRA Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "erp_section_section",
+   "fieldtype": "Section Break",
+   "label": "ERP Section"
+  },
+  {
+   "fieldname": "erp",
+   "fieldtype": "Attach",
+   "label": "ERP"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "erp_percentage_completed",
+   "fieldtype": "Data",
+   "label": "ERP Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "erp_status",
+   "fieldtype": "Select",
+   "label": "ERP Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "hazid_section_section",
+   "fieldtype": "Section Break",
+   "label": "HAZID Section"
+  },
+  {
+   "fieldname": "hazid",
+   "fieldtype": "Attach",
+   "label": "HAZID"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hazid_percentage_completed",
+   "fieldtype": "Data",
+   "label": "HAZID Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hazid_status",
+   "fieldtype": "Select",
+   "label": "HAZID Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-20 17:39:53.484106",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Project HSE Document",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

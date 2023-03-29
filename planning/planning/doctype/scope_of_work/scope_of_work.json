@@ -1,0 +1,816 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-20 15:24:30.225135",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doc_no",
+  "location",
+  "won",
+  "rev",
+  "fwopiping",
+  "column_break_5",
+  "date",
+  "ref",
+  "shutdown",
+  "non_shutdown",
+  "data_6",
+  "yes",
+  "no",
+  "fwostructural",
+  "section_break_15",
+  "discipline_cross_reference",
+  "piping_wp",
+  "structural_wp",
+  "paco_wp",
+  "electrical_wp",
+  "note___",
+  "data_22",
+  "title",
+  "notes",
+  "column_break_24",
+  "scope_of_work",
+  "text_25",
+  "project_notes",
+  "safety_relife_valve_verification_section",
+  "data_30",
+  "pressure_relife_valve_no",
+  "set_pressure",
+  "size",
+  "column_break_34",
+  "on_site",
+  "relife_valve_no",
+  "set_pressue",
+  "size_",
+  "model",
+  "date_last_tested",
+  "column_break_41",
+  "execution___installed_relief_valve",
+  "relife_valve_no_",
+  "set_pressure_",
+  "size__",
+  "model_",
+  "date_last_tested_",
+  "special_instruction_section",
+  "text_49",
+  "column_break_49",
+  "execution_of_completion",
+  "completed",
+  "partial_completed",
+  "deferred",
+  "cancelled",
+  "start_on",
+  "finish_on",
+  "on",
+  "by",
+  "on_",
+  "by_",
+  "on__",
+  "by__",
+  "section_break_64",
+  "piping_class_hydrotest",
+  "long_lead_material_is_item_no",
+  "execution_of_manhours",
+  "estimate",
+  "actual",
+  "column_break_67",
+  "signature_of_execution_completion",
+  "lrmc_wss",
+  "lrmc_qc",
+  "aen3x_csr",
+  "op1qai4x",
+  "requirementsnote_a",
+  "painting__blasting",
+  "check_78",
+  "welding__not",
+  "check_80",
+  "hydro_test_water",
+  "check_82",
+  "bolt_torquing",
+  "check_84",
+  "scaffolding",
+  "check_86",
+  "pressure_testing",
+  "check_88",
+  "section_break_67",
+  "attachments",
+  "attch1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "column_break_93",
+  "sheets",
+  "s1",
+  "s2",
+  "s3",
+  "s4",
+  "s5",
+  "s6",
+  "s7",
+  "s8",
+  "s9",
+  "s10",
+  "s11",
+  "s12",
+  "s13",
+  "s14",
+  "section_break_121",
+  "approved_by_hoddiscipline_lead",
+  "verify_by_asset",
+  "table_124",
+  "data_125",
+  "section_break_126",
+  "data_127",
+  "text_128",
+  "text_129",
+  "indicator",
+  "signature",
+  "date132"
+ ],
+ "fields": [
+  {
+   "fieldname": "doc_no",
+   "fieldtype": "Data",
+   "label": "DOC_No"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "won",
+   "fieldtype": "Link",
+   "label": "WON",
+   "options": "Project"
+  },
+  {
+   "fieldname": "rev",
+   "fieldtype": "Data",
+   "label": "REV"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "data_6",
+   "fieldtype": "Select",
+   "label": "Red PAR/VAR/SAR",
+   "options": "\nPAR\nVAR\nSAR"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "shutdown",
+   "fieldtype": "Check",
+   "label": "Shutdown"
+  },
+  {
+   "default": "0",
+   "fieldname": "non_shutdown",
+   "fieldtype": "Check",
+   "label": "Non Shutdown"
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Data",
+   "label": "Ref"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "fwopiping",
+   "fieldtype": "Data",
+   "label": "FWO(Piping)"
+  },
+  {
+   "fieldname": "fwostructural",
+   "fieldtype": "Data",
+   "label": "FWO(Structural)"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "discipline_cross_reference",
+   "fieldtype": "Heading",
+   "label": "DISCIPLINE CROSS REFERENCE"
+  },
+  {
+   "default": "0",
+   "fieldname": "piping_wp",
+   "fieldtype": "Check",
+   "label": "PIPING WP"
+  },
+  {
+   "default": "0",
+   "fieldname": "structural_wp",
+   "fieldtype": "Check",
+   "label": "STRUCTURAL WP"
+  },
+  {
+   "default": "0",
+   "fieldname": "paco_wp",
+   "fieldtype": "Check",
+   "label": "PACO WP"
+  },
+  {
+   "default": "0",
+   "fieldname": "electrical_wp",
+   "fieldtype": "Check",
+   "label": "ELECTRICAL WP"
+  },
+  {
+   "default": "DETAIL OF SCOPE OF WORK REFER TO SPECIFIC DISCIPLINE",
+   "fieldname": "note___",
+   "fieldtype": "Heading",
+   "label": "NOTE "
+  },
+  {
+   "default": "DETAIL OF SCOPE OF WORK REFER TO SPECIFIC DISCIPLINE",
+   "fieldname": "data_22",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Small Text",
+   "label": "TITLE"
+  },
+  {
+   "fieldname": "scope_of_work",
+   "fieldtype": "Select",
+   "label": "Scope of Work",
+   "options": "\nPIPING\nSTRUCTURAL\nPACO\nELECTRICAL"
+  },
+  {
+   "fieldname": "text_25",
+   "fieldtype": "Text"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "project_notes",
+   "fieldtype": "Text",
+   "label": "Project Notes"
+  },
+  {
+   "fieldname": "safety_relife_valve_verification_section",
+   "fieldtype": "Section Break",
+   "label": "SAFETY RELIFE VALVE VERIFICATION"
+  },
+  {
+   "fieldname": "data_30",
+   "fieldtype": "Heading",
+   "label": "PEFS"
+  },
+  {
+   "fieldname": "pressure_relife_valve_no",
+   "fieldtype": "Data",
+   "label": "Pressure Relife Valve No"
+  },
+  {
+   "fieldname": "set_pressure",
+   "fieldtype": "Data",
+   "label": "Set Pressure"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "on_site",
+   "fieldtype": "Heading",
+   "label": "ON SITE"
+  },
+  {
+   "fieldname": "relife_valve_no",
+   "fieldtype": "Data",
+   "label": "Relife Valve No"
+  },
+  {
+   "fieldname": "set_pressue",
+   "fieldtype": "Data",
+   "label": "Set Pressue"
+  },
+  {
+   "fieldname": "size_",
+   "fieldtype": "Data",
+   "label": "Size"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "date_last_tested",
+   "fieldtype": "Date",
+   "label": "Date Last Tested"
+  },
+  {
+   "fieldname": "column_break_41",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "execution___installed_relief_valve",
+   "fieldtype": "Heading",
+   "label": "EXECUTION _ INSTALLED RELIEF VALVE"
+  },
+  {
+   "fieldname": "relife_valve_no_",
+   "fieldtype": "Data",
+   "label": "Relife Valve No"
+  },
+  {
+   "fieldname": "set_pressure_",
+   "fieldtype": "Data",
+   "label": "Set Pressure"
+  },
+  {
+   "fieldname": "size__",
+   "fieldtype": "Data",
+   "label": "Size"
+  },
+  {
+   "fieldname": "model_",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "date_last_tested_",
+   "fieldtype": "Data",
+   "label": "Date Last Tested"
+  },
+  {
+   "fieldname": "special_instruction_section",
+   "fieldtype": "Section Break",
+   "label": "Special Instruction"
+  },
+  {
+   "default": "0",
+   "fieldname": "completed",
+   "fieldtype": "Check",
+   "label": "Completed"
+  },
+  {
+   "fieldname": "start_on",
+   "fieldtype": "Date",
+   "label": "Start On"
+  },
+  {
+   "fieldname": "finish_on",
+   "fieldtype": "Date",
+   "label": "Finish On"
+  },
+  {
+   "default": "0",
+   "fieldname": "partial_completed",
+   "fieldtype": "Check",
+   "label": "PARTIAL COMPLETED"
+  },
+  {
+   "default": "0",
+   "fieldname": "deferred",
+   "fieldtype": "Check",
+   "label": "DEFERRED"
+  },
+  {
+   "default": "0",
+   "fieldname": "cancelled",
+   "fieldtype": "Check",
+   "label": "CANCELLED"
+  },
+  {
+   "fieldname": "execution_of_completion",
+   "fieldtype": "Heading",
+   "label": "EXECUTION OF COMPLETION"
+  },
+  {
+   "fieldname": "column_break_49",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Hydro Test Pressure: .......................N/A..........................kPag (i.e, 1.5 x system design pressure)Based On Design Pressue @ ...................... N/A................................kPag",
+   "fieldname": "text_49",
+   "fieldtype": "Text"
+  },
+  {
+   "fieldname": "on",
+   "fieldtype": "Date",
+   "label": "On"
+  },
+  {
+   "fieldname": "by",
+   "fieldtype": "Date",
+   "label": "By"
+  },
+  {
+   "fieldname": "on_",
+   "fieldtype": "Date",
+   "label": "On"
+  },
+  {
+   "fieldname": "by_",
+   "fieldtype": "Date",
+   "label": "By"
+  },
+  {
+   "fieldname": "on__",
+   "fieldtype": "Date",
+   "label": "On"
+  },
+  {
+   "fieldname": "by__",
+   "fieldtype": "Date",
+   "label": "By"
+  },
+  {
+   "fieldname": "section_break_64",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "piping_class_hydrotest",
+   "fieldtype": "Data",
+   "label": "PIPING CLASS HYDROTEST"
+  },
+  {
+   "fieldname": "long_lead_material_is_item_no",
+   "fieldtype": "Data",
+   "label": "LONG LEAD MATERIAL IS ITEM NO"
+  },
+  {
+   "fieldname": "column_break_67",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "signature_of_execution_completion",
+   "fieldtype": "Heading",
+   "label": "SIGNATURE OF EXECUTION COMPLETION"
+  },
+  {
+   "fieldname": "lrmc_wss",
+   "fieldtype": "Data",
+   "label": "LRMC WSS"
+  },
+  {
+   "fieldname": "lrmc_qc",
+   "fieldtype": "Data",
+   "label": "LRMC QC"
+  },
+  {
+   "fieldname": "aen3x_csr",
+   "fieldtype": "Data",
+   "label": "AEN/3X CSR"
+  },
+  {
+   "fieldname": "op1qai4x",
+   "fieldtype": "Data",
+   "label": "OP/1/QAI/4X"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Heading",
+   "label": "ATTACHMENTS"
+  },
+  {
+   "fieldname": "sheets",
+   "fieldtype": "Heading",
+   "label": "Sheets"
+  },
+  {
+   "default": "DETAILED SCOPE AND SEQUENCE OF WORK/OAI REPORT/EMAIL(STENCIL INFO)",
+   "fieldname": "attch1",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "FWO / ASSEMBLY LIST",
+   "fieldname": "2",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "QC INSPECTION REQUIREMENT SHEET",
+   "fieldname": "3",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "MTO LIST / SAP INPUT",
+   "fieldname": "4",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "MATERIAL REQUISITION",
+   "fieldname": "5",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "ANOMALIES REPORT / PHOTO(S)/ SAP EXTRACT/ LSCI/ EMAIL",
+   "fieldname": "6",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "BOLT TORQUING CHECKLIST",
+   "fieldname": "7",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "MARKED-UP PEFS / UEFS",
+   "fieldname": "8",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "PLOT PLAN / PIPING G A / H A C DRAWING / LOCTAION PHOTO",
+   "fieldname": "9",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "AFC ISOMETRIC DWG / STD DWG / SKETCH",
+   "fieldname": "10",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "ISOLATION REQUIREMENT SHEET",
+   "fieldname": "11",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "EQUIPMENT INSTRUMENT NAMEPLATE DETAILS",
+   "fieldname": "12",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "EQUIPMENT DATASHEET / VENDOR DRAWING",
+   "fieldname": "13",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "MECHANCAL SURVEY CHECKLIST",
+   "fieldname": "14",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "s1",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "s2",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "s3",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "s4",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "s5",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "s6",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "s7",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "s8",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "s9",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "s10",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "s11",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "s12",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "s13",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "s14",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "execution_of_manhours",
+   "fieldtype": "Heading",
+   "label": "EXECUTION OF MANHOURS"
+  },
+  {
+   "fieldname": "estimate",
+   "fieldtype": "Data",
+   "label": "ESTIMATE"
+  },
+  {
+   "fieldname": "actual",
+   "fieldtype": "Data",
+   "label": "ACTUAL"
+  },
+  {
+   "fieldname": "section_break_67",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_93",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "requirementsnote_a",
+   "fieldtype": "Heading",
+   "label": "REQUIREMENTS(NOTE A)"
+  },
+  {
+   "default": "Painting / Blasting",
+   "fieldname": "painting__blasting",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "Welding / Not",
+   "fieldname": "welding__not",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "Hydro Test Water",
+   "fieldname": "hydro_test_water",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "Bolt Torquing",
+   "fieldname": "bolt_torquing",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "Scaffolding",
+   "fieldname": "scaffolding",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "Pressure Testing",
+   "fieldname": "pressure_testing",
+   "fieldtype": "Data"
+  },
+  {
+   "default": "0",
+   "fieldname": "check_78",
+   "fieldtype": "Check"
+  },
+  {
+   "default": "0",
+   "fieldname": "check_80",
+   "fieldtype": "Check"
+  },
+  {
+   "default": "0",
+   "fieldname": "check_82",
+   "fieldtype": "Check"
+  },
+  {
+   "default": "0",
+   "fieldname": "check_84",
+   "fieldtype": "Check"
+  },
+  {
+   "default": "0",
+   "fieldname": "check_86",
+   "fieldtype": "Check"
+  },
+  {
+   "default": "0",
+   "fieldname": "check_88",
+   "fieldtype": "Check"
+  },
+  {
+   "fieldname": "section_break_121",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approved_by_hoddiscipline_lead",
+   "fieldtype": "Data",
+   "label": "Approved By (HOD/Discipline Lead)"
+  },
+  {
+   "fieldname": "verify_by_asset",
+   "fieldtype": "Data",
+   "label": "Verify by Asset"
+  },
+  {
+   "fieldname": "table_124",
+   "fieldtype": "Table",
+   "options": "Scope Table"
+  },
+  {
+   "default": "RETURN AS-BUILT WORK PACK AND OTHER SUPPORTING DATA TO AEN/7 CONSTRUCTION ENGINEER",
+   "fieldname": "data_125",
+   "fieldtype": "Text"
+  },
+  {
+   "fieldname": "section_break_126",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "DETAILS SCOPE OF WORK AS STATED BELOW",
+   "fieldname": "data_127",
+   "fieldtype": "Text"
+  },
+  {
+   "default": "AEN/71 WORK PACK ENGINEER APPROVAL",
+   "fieldname": "text_128",
+   "fieldtype": "Text"
+  },
+  {
+   "default": "REMARKS/COMMENTS:",
+   "fieldname": "text_129",
+   "fieldtype": "Text"
+  },
+  {
+   "fieldname": "indicator",
+   "fieldtype": "Data",
+   "label": "Indicator"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Data",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "date132",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-27 19:48:46.764956",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Scope Of Work",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

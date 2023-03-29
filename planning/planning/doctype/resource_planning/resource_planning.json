@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-11-23 12:54:41.953245",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "work_based_on",
+  "campaign",
+  "won",
+  "crew_group",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "work_based_on",
+   "fieldtype": "Select",
+   "label": "Work based On",
+   "options": "\nCampaign\nProject"
+  },
+  {
+   "fieldname": "crew_group",
+   "fieldtype": "Link",
+   "label": "Crew Group",
+   "options": "Crew"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Resource Planning",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.work_based_on=='Campaign'",
+   "fieldname": "won",
+   "fieldtype": "Link",
+   "label": "WON",
+   "options": "Project"
+  },
+  {
+   "depends_on": "eval:doc.work_based_on=='Campaign'",
+   "fieldname": "campaign",
+   "fieldtype": "Data",
+   "label": "Campaign"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-11-23 13:18:35.970755",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Resource Planning",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

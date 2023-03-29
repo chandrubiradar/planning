@@ -1,0 +1,36 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-24 22:44:51.152578",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "won_data",
+  "completed"
+ ],
+ "fields": [
+  {
+   "fieldname": "won_data",
+   "fieldtype": "Link",
+   "label": "WON",
+   "options": "Project"
+  },
+  {
+   "fieldname": "completed",
+   "fieldtype": "Float",
+   "label": "%Completed"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-25 00:14:21.455599",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Campaign WON Data",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

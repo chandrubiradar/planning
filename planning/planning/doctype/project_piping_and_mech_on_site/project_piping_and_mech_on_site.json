@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-13 17:22:43.058102",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "activity",
+  "unit_of_measure",
+  "plan_start",
+  "plan_finish",
+  "actual_start",
+  "actual_finish",
+  "total_scope",
+  "completed",
+  "plan",
+  "actual",
+  "var"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity",
+   "fieldtype": "Data",
+   "label": "Activity"
+  },
+  {
+   "fieldname": "unit_of_measure",
+   "fieldtype": "Data",
+   "label": "Unit Of Measure"
+  },
+  {
+   "fieldname": "plan_start",
+   "fieldtype": "Date",
+   "label": "Plan Start"
+  },
+  {
+   "fieldname": "plan_finish",
+   "fieldtype": "Date",
+   "label": "Plan Finish"
+  },
+  {
+   "fieldname": "actual_start",
+   "fieldtype": "Date",
+   "label": "Actual Start"
+  },
+  {
+   "fieldname": "actual_finish",
+   "fieldtype": "Date",
+   "label": "Actual Finish"
+  },
+  {
+   "fieldname": "total_scope",
+   "fieldtype": "Data",
+   "label": "Total Scope"
+  },
+  {
+   "fieldname": "completed",
+   "fieldtype": "Data",
+   "label": "Completed"
+  },
+  {
+   "fieldname": "plan",
+   "fieldtype": "Data",
+   "label": "Plan%"
+  },
+  {
+   "fieldname": "actual",
+   "fieldtype": "Data",
+   "label": "Actual%"
+  },
+  {
+   "fieldname": "var",
+   "fieldtype": "Data",
+   "label": "VAR"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-13 17:22:43.058102",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Project Piping and Mech On Site",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

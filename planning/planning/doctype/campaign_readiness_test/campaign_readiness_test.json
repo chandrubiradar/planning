@@ -1,0 +1,694 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-02-27 13:51:18.870109",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "workflow_state",
+  "naming_series",
+  "contract",
+  "year",
+  "area",
+  "location",
+  "start_date",
+  "end_date",
+  "won_count",
+  "column_break_6",
+  "campaign",
+  "campaign_description",
+  "wons",
+  "column_break_23",
+  "completed",
+  "status",
+  "column_break_17",
+  "won_percentage_details",
+  "won_details",
+  "design_document_section_section",
+  "design_won_based_document",
+  "design_workpack_document",
+  "column_break_20",
+  "design_status",
+  "column_break_232",
+  "design",
+  "column_break_24",
+  "design_readiness_indicator",
+  "column_break_10",
+  "won_based_document",
+  "total_css_document",
+  "column_break_98",
+  "css_status_",
+  "column_break_22",
+  "total_percentage",
+  "column_break_19",
+  "check_20",
+  "construction_document_section_section",
+  "construction_won_based_document",
+  "total_construction_document",
+  "column_break_38",
+  "construction_status",
+  "column_break_40",
+  "total_construction_percentage",
+  "column_break_42",
+  "readiness_indicator",
+  "planning_document_section_section",
+  "planning_won_based_document",
+  "total_planning_document",
+  "column_break_46",
+  "planning_status",
+  "column_break_48",
+  "total_planning_percentage",
+  "column_break_50",
+  "check_51",
+  "hse_section_section",
+  "hse_won_based_document",
+  "total_hse_document",
+  "column_break_26",
+  "hse_status_",
+  "column_break_28",
+  "total_hse_percentage",
+  "column_break_60",
+  "check_61",
+  "qc_document_section_section",
+  "qc_won_based_document",
+  "total_qc_document",
+  "column_break_65",
+  "qc_status",
+  "column_break_67",
+  "total_qc_percentage",
+  "column_break_69",
+  "check_70",
+  "material_document_section_section",
+  "material_won_based_document",
+  "total_material_document",
+  "column_break_74",
+  "material_status",
+  "column_break_76",
+  "total_material_percentage",
+  "column_break_78",
+  "check_79",
+  "bagtag_document_section_section",
+  "bagtag_won_based_document",
+  "total_bagtag_document",
+  "column_break_83",
+  "bagtag_status",
+  "column_break_85",
+  "total_bagtag_percentage",
+  "column_break_87",
+  "check_88",
+  "qs_document_section_section",
+  "qs_won_based_document",
+  "total_qs_document",
+  "column_break_92",
+  "qs_status",
+  "column_break_94",
+  "total_qs_percentage",
+  "column_break_96",
+  "check_97",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Workflow State",
+   "options": "Workflow State"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "Campaign-Read-.####"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Contract",
+   "options": "Contract",
+   "reqd": 1
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Select",
+   "label": "Area",
+   "options": "\nDARAT EASTERN TANK GROUP\nDARAT WESTERN TANK GROUP\nDARAT NGCP\nDARAT RASAU\nDARAT OTHERS\nHP SCOT\nHP BGO\nHP PHM\nHP OTHERS\nLSM\nOTHERS"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Select",
+   "label": "Location",
+   "options": "\nTANK GROUP 28\nTANK GROUP 29\nTANK GROUP 31\nTANK GROUP 27\nTANK GROUP 30\nTANK FRAM\nSNF\nEFFLUENT\nCDU\nBMS\nGMS\nTMS\nTGP\nJMS\nIGT\nFMS\nWTP\nDGRS\nBADAS\nSTL KB\nSTL MAURA\nSAV\nOTHERS"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "default": "1",
+   "fieldname": "won_count",
+   "fieldtype": "Int",
+   "label": "WON Count"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "campaign",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Campaign"
+  },
+  {
+   "fieldname": "campaign_description",
+   "fieldtype": "Data",
+   "label": "Campaign Description"
+  },
+  {
+   "fieldname": "wons",
+   "fieldtype": "Text",
+   "label": "WONs"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Overall Percentage and Status"
+  },
+  {
+   "fieldname": "completed",
+   "fieldtype": "Select",
+   "label": "%Completed"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nCompleted"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "won_percentage_details",
+   "fieldtype": "Button",
+   "label": "WON Percentage Details"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "won_details",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "WON ",
+   "options": "Project"
+  },
+  {
+   "fieldname": "design_document_section_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Design Document Section"
+  },
+  {
+   "fieldname": "design_won_based_document",
+   "fieldtype": "Button",
+   "label": "Design WON Based Document"
+  },
+  {
+   "fieldname": "design_workpack_document",
+   "fieldtype": "Data",
+   "label": "Total Design Document"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design_status",
+   "fieldtype": "Select",
+   "label": "Design Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "column_break_232",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "design",
+   "fieldtype": "Data",
+   "label": "Total Design Percentage"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "design_readiness_indicator",
+   "fieldtype": "Check",
+   "label": "Readiness Indicator"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "CSS Document Section"
+  },
+  {
+   "fieldname": "won_based_document",
+   "fieldtype": "Button",
+   "label": "CSS WON Based Document"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_css_document",
+   "fieldtype": "Data",
+   "label": "Total CSS Document"
+  },
+  {
+   "fieldname": "column_break_98",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "css_status_",
+   "fieldtype": "Select",
+   "label": "CSS Status_",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_percentage",
+   "fieldtype": "Data",
+   "label": "Total CSS Percentage"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "check_20",
+   "fieldtype": "Check",
+   "label": "Readiness Indicator"
+  },
+  {
+   "fieldname": "construction_document_section_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Construction Document Section"
+  },
+  {
+   "fieldname": "construction_won_based_document",
+   "fieldtype": "Button",
+   "label": "Construction WON Based Document"
+  },
+  {
+   "fieldname": "total_construction_document",
+   "fieldtype": "Data",
+   "label": "Total Construction Document"
+  },
+  {
+   "fieldname": "column_break_38",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "construction_status",
+   "fieldtype": "Select",
+   "label": "Construction Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_construction_percentage",
+   "fieldtype": "Data",
+   "label": "Total Construction Percentage"
+  },
+  {
+   "fieldname": "column_break_42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "readiness_indicator",
+   "fieldtype": "Check",
+   "label": "Readiness Indicator"
+  },
+  {
+   "fieldname": "planning_document_section_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Planning Document Section"
+  },
+  {
+   "fieldname": "planning_won_based_document",
+   "fieldtype": "Button",
+   "label": "Planning WON Based Document"
+  },
+  {
+   "fieldname": "total_planning_document",
+   "fieldtype": "Data",
+   "label": "Total Planning Document"
+  },
+  {
+   "fieldname": "column_break_46",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "planning_status",
+   "fieldtype": "Select",
+   "label": "Planning Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "column_break_48",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_planning_percentage",
+   "fieldtype": "Data",
+   "label": "Total Planning Percentage"
+  },
+  {
+   "fieldname": "column_break_50",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "check_51",
+   "fieldtype": "Check",
+   "label": "Readiness Indicator"
+  },
+  {
+   "fieldname": "hse_section_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "HSE Section"
+  },
+  {
+   "fieldname": "hse_won_based_document",
+   "fieldtype": "Button",
+   "label": "HSE WON Based Document"
+  },
+  {
+   "fieldname": "total_hse_document",
+   "fieldtype": "Data",
+   "label": "Total HSE Document"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hse_status_",
+   "fieldtype": "Select",
+   "label": "HSE Status_",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_hse_percentage",
+   "fieldtype": "Data",
+   "label": "Total HSE Percentage"
+  },
+  {
+   "fieldname": "column_break_60",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "check_61",
+   "fieldtype": "Check",
+   "label": "Readiness Indicator"
+  },
+  {
+   "fieldname": "qc_document_section_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "QC Document Section"
+  },
+  {
+   "fieldname": "qc_won_based_document",
+   "fieldtype": "Button",
+   "label": "QC WON Based Document"
+  },
+  {
+   "fieldname": "total_qc_document",
+   "fieldtype": "Data",
+   "label": "Total QC Document"
+  },
+  {
+   "fieldname": "column_break_65",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qc_status",
+   "fieldtype": "Select",
+   "label": "QC Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "column_break_67",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_qc_percentage",
+   "fieldtype": "Data",
+   "label": "Total QC Percentage"
+  },
+  {
+   "fieldname": "column_break_69",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "check_70",
+   "fieldtype": "Check",
+   "label": "Readiness Indicator"
+  },
+  {
+   "fieldname": "material_document_section_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Material Document Section"
+  },
+  {
+   "fieldname": "material_won_based_document",
+   "fieldtype": "Button",
+   "label": "Material WON Based Document"
+  },
+  {
+   "fieldname": "total_material_document",
+   "fieldtype": "Data",
+   "label": "Total Material Document"
+  },
+  {
+   "fieldname": "column_break_74",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "material_status",
+   "fieldtype": "Select",
+   "label": "Material Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "column_break_76",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_material_percentage",
+   "fieldtype": "Data",
+   "label": "Total Material Percentage"
+  },
+  {
+   "fieldname": "column_break_78",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "check_79",
+   "fieldtype": "Check",
+   "label": "Readiness Indicator"
+  },
+  {
+   "fieldname": "bagtag_document_section_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "BagTag Document Section"
+  },
+  {
+   "fieldname": "bagtag_won_based_document",
+   "fieldtype": "Button",
+   "label": "BagTag WON Based Document"
+  },
+  {
+   "fieldname": "total_bagtag_document",
+   "fieldtype": "Data",
+   "label": "Total BagTag Document"
+  },
+  {
+   "fieldname": "column_break_83",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bagtag_status",
+   "fieldtype": "Select",
+   "label": "BagTag Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "column_break_85",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_bagtag_percentage",
+   "fieldtype": "Data",
+   "label": "Total BagTag Percentage"
+  },
+  {
+   "fieldname": "column_break_87",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "check_88",
+   "fieldtype": "Check",
+   "label": "Readiness Indicator"
+  },
+  {
+   "fieldname": "qs_document_section_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "QS Document Section"
+  },
+  {
+   "fieldname": "qs_won_based_document",
+   "fieldtype": "Button",
+   "label": "QS WON Based Document"
+  },
+  {
+   "fieldname": "total_qs_document",
+   "fieldtype": "Data",
+   "label": "Total QS Document"
+  },
+  {
+   "fieldname": "column_break_92",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qs_status",
+   "fieldtype": "Select",
+   "label": "QS Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "column_break_94",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_qs_percentage",
+   "fieldtype": "Data",
+   "label": "Total QS Percentage"
+  },
+  {
+   "fieldname": "column_break_96",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "check_97",
+   "fieldtype": "Check",
+   "label": "Readiness Indicator"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Campaign Readiness Test",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Campaign Readiness Test",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-01 16:18:42.514041",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Campaign Readiness Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "set_user_permissions": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}

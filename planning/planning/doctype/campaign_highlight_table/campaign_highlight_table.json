@@ -1,0 +1,36 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-31 20:48:14.783572",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "wons",
+  "highlights"
+ ],
+ "fields": [
+  {
+   "fieldname": "wons",
+   "fieldtype": "Link",
+   "label": "WON's",
+   "options": "Project"
+  },
+  {
+   "fieldname": "highlights",
+   "fieldtype": "Data",
+   "label": "Highlights"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-31 20:48:14.783572",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Campaign Highlight Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

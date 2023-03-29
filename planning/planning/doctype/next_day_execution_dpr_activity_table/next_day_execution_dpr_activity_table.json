@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-17 15:46:15.237983",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_id",
+  "description_of_work",
+  "overall_completion"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity_id",
+   "fieldtype": "Link",
+   "label": "Activity ID",
+   "options": "Task"
+  },
+  {
+   "fieldname": "description_of_work",
+   "fieldtype": "Small Text",
+   "label": "Description Of Work"
+  },
+  {
+   "fieldname": "overall_completion",
+   "fieldtype": "Data",
+   "label": "Overall Completion"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-17 15:46:15.237983",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Next Day Execution DPR Activity Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

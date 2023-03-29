@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-27 15:59:00.837783",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "report_no",
+  "client",
+  "contract_no",
+  "powo_no",
+  "date",
+  "project",
+  "column_break_7",
+  "location",
+  "specification",
+  "acceptance_criteria",
+  "material",
+  "nsp_procedure",
+  "line_no",
+  "section_break_14",
+  "table_15",
+  "torquing_equipment_details",
+  "torque_wrench_slno",
+  "calibration_certificate_no_calibration_due_date",
+  "section_break_18",
+  "table_20"
+ ],
+ "fields": [
+  {
+   "fieldname": "report_no",
+   "fieldtype": "Data",
+   "label": "Report No"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "contract_no",
+   "fieldtype": "Data",
+   "label": "Contract No"
+  },
+  {
+   "fieldname": "powo_no",
+   "fieldtype": "Data",
+   "label": "PO/WO No"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "label": "Date"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "Project"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "specification",
+   "fieldtype": "Data",
+   "label": "Specification"
+  },
+  {
+   "fieldname": "acceptance_criteria",
+   "fieldtype": "Data",
+   "label": "Acceptance Criteria"
+  },
+  {
+   "fieldname": "material",
+   "fieldtype": "Data",
+   "label": "Material"
+  },
+  {
+   "fieldname": "nsp_procedure",
+   "fieldtype": "Data",
+   "label": "NSP Procedure"
+  },
+  {
+   "fieldname": "line_no",
+   "fieldtype": "Data",
+   "label": "Line No"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "torquing_equipment_details",
+   "fieldtype": "Data",
+   "label": "Torquing Equipment Details"
+  },
+  {
+   "fieldname": "torque_wrench_slno",
+   "fieldtype": "Data",
+   "label": "Torque Wrench Sl.No"
+  },
+  {
+   "fieldname": "calibration_certificate_no_calibration_due_date",
+   "fieldtype": "Data",
+   "label": "Calibration Certificate No/ Calibration Due Date"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_15",
+   "fieldtype": "Table",
+   "options": "BOLT Torquing Checklist Table"
+  },
+  {
+   "fieldname": "table_20",
+   "fieldtype": "Table",
+   "options": "Bolt Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-27 16:15:34.940367",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "BOLT TORQUING",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

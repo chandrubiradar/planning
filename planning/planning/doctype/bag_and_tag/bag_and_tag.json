@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:BagTag-{campaign}-{won}",
+ "creation": "2022-11-14 15:25:03.966405",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "based_on",
+  "section_break_2",
+  "naming_series",
+  "contract",
+  "target_completion_date",
+  "column_break_3",
+  "project_id",
+  "campaign",
+  "completed",
+  "column_break_6",
+  "won",
+  "status",
+  "bag_and_tag_section",
+  "bag_and_tag",
+  "column_break_11",
+  "bagtag_descrption",
+  "column_break_13",
+  "bag_and_tag_completed",
+  "column_break_20",
+  "bag_and_tag_status",
+  "bagtag_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "bag_and_tag",
+   "fieldtype": "Attach",
+   "label": "Bag and Tag"
+  },
+  {
+   "default": "Today",
+   "fieldname": "target_completion_date",
+   "fieldtype": "Date",
+   "label": "Target Completion Date"
+  },
+  {
+   "fieldname": "completed",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "%Completed"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bag_and_tag_completed",
+   "fieldtype": "Data",
+   "label": "Bag and Tag Completed"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "BagTag-.####"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Contract",
+   "options": "Contract",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.based_on == 'Campaign Readiness' || doc.based_on == ''",
+   "fieldname": "campaign",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Campaign"
+  },
+  {
+   "fieldname": "bag_and_tag_section",
+   "fieldtype": "Section Break",
+   "label": "Bag and Tag"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.based_on == 'Campaign Readiness' || doc.based_on == ''",
+   "fieldname": "won",
+   "fieldtype": "Link",
+   "label": "WON",
+   "options": "Project"
+  },
+  {
+   "fieldname": "bagtag_status",
+   "fieldtype": "Select",
+   "label": "BagTag Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "bag_and_tag_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Bag and Tag Status"
+  },
+  {
+   "fieldname": "based_on",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Based On",
+   "options": "\nCampaign Readiness\nProject Readiness"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.based_on== 'Project Readiness'",
+   "fieldname": "project_id",
+   "fieldtype": "Data",
+   "label": "Project ID"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bagtag_descrption",
+   "fieldtype": "Text",
+   "label": "BagTag Descrption"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-23 13:43:37.043531",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Bag and Tag",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

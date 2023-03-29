@@ -1,0 +1,273 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-05 20:35:34.494575",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ncr_no",
+  "divdeptproject",
+  "location",
+  "iso_clause",
+  "column_break_2",
+  "minor",
+  "column_break_4",
+  "major",
+  "date",
+  "contract_no",
+  "client",
+  "column_break_6",
+  "this_ncr_must_be_closed_out_within_90_days",
+  "section_break_14",
+  "description_of_ncrto_be_filled_up_by_initiator",
+  "raised_by_initiatorauditor",
+  "column_break_18",
+  "recommendationto_be_filled_up_by_initiator",
+  "agreed_bydm_or_supervisor",
+  "section_break_20",
+  "root_cause_analysiswhat_filled_in_the_system",
+  "corrective_actionto_be_filled_up_by_dm_or_proj_supervisor",
+  "data_22",
+  "preventive_action",
+  "verificationto_be_filled_up_by_initiatorauditor",
+  "section_break_26",
+  "clearanceto_be_completed_by_initiator",
+  "accepted",
+  "yes",
+  "no",
+  "column_break_28",
+  "notes",
+  "dm__division_manager",
+  "initiator__the_person_who_issued_the_ncr",
+  "supervisor__the_supervisor_in_the_work_location",
+  "section_break_36",
+  "namesignature",
+  "column_break_38",
+  "position",
+  "column_break_40",
+  "date_"
+ ],
+ "fields": [
+  {
+   "fieldname": "ncr_no",
+   "fieldtype": "Data",
+   "label": "NCR No"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "minor",
+   "fieldtype": "Check",
+   "label": "Minor"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "major",
+   "fieldtype": "Check",
+   "label": "Major"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "this_ncr_must_be_closed_out_within_90_days",
+   "fieldtype": "Heading",
+   "label": "This NCR must be closed out within 90 days "
+  },
+  {
+   "fieldname": "divdeptproject",
+   "fieldtype": "Data",
+   "label": "Div/Dept/Project"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "iso_clause",
+   "fieldtype": "Data",
+   "label": "ISO Clause"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "contract_no",
+   "fieldtype": "Data",
+   "label": "Contract No"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "description_of_ncrto_be_filled_up_by_initiator",
+   "fieldtype": "Text",
+   "label": "Description Of NCR(to be filled up by Initiator)"
+  },
+  {
+   "fieldname": "recommendationto_be_filled_up_by_initiator",
+   "fieldtype": "Text",
+   "label": "Recommendation(to be filled up by Initiator)"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "raised_by_initiatorauditor",
+   "fieldtype": "Data",
+   "label": "RAISED BY INITIATOR/AUDITOR"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "agreed_bydm_or_supervisor",
+   "fieldtype": "Data",
+   "label": "AGREED BY(DM or SUPERVISOR)"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "root_cause_analysiswhat_filled_in_the_system",
+   "fieldtype": "Text",
+   "label": "ROOT CAUSE ANALYSIS(What filled in the system)"
+  },
+  {
+   "fieldname": "data_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "corrective_actionto_be_filled_up_by_dm_or_proj_supervisor",
+   "fieldtype": "Data",
+   "label": "CORRECTIVE ACTION(to be filled up by DM or Proj Supervisor)"
+  },
+  {
+   "fieldname": "preventive_action",
+   "fieldtype": "Text",
+   "label": "PREVENTIVE ACTION"
+  },
+  {
+   "fieldname": "verificationto_be_filled_up_by_initiatorauditor",
+   "fieldtype": "Text",
+   "label": "VERIFICATION(to be filled up by initiator/auditor)"
+  },
+  {
+   "fieldname": "section_break_26",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "clearanceto_be_completed_by_initiator",
+   "fieldtype": "Heading",
+   "label": "CLEARANCE(to be completed by initiator)"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Heading",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "dm__division_manager",
+   "fieldtype": "Heading",
+   "label": "DM_ Division Manager"
+  },
+  {
+   "fieldname": "initiator__the_person_who_issued_the_ncr",
+   "fieldtype": "Heading",
+   "label": "Initiator_ The person who issued the NCR"
+  },
+  {
+   "fieldname": "supervisor__the_supervisor_in_the_work_location",
+   "fieldtype": "Heading",
+   "label": "Supervisor_ The Supervisor in the work location"
+  },
+  {
+   "fieldname": "accepted",
+   "fieldtype": "Heading",
+   "label": "Accepted:"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "label": "YES"
+  },
+  {
+   "default": "0",
+   "fieldname": "no",
+   "fieldtype": "Check",
+   "label": "NO"
+  },
+  {
+   "fieldname": "section_break_36",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "namesignature",
+   "fieldtype": "Data",
+   "label": "Name/Signature"
+  },
+  {
+   "fieldname": "column_break_38",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position"
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_",
+   "fieldtype": "Date",
+   "label": "Date_"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-05 22:31:47.721549",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "NCR",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

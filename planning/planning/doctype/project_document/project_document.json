@@ -1,0 +1,277 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-11-14 15:19:32.305369",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "contract",
+  "design_staff_holding",
+  "completed",
+  "column_break_5",
+  "campaign",
+  "libeline_protection",
+  "status",
+  "column_break_9",
+  "target_completion_date",
+  "mos_section_section",
+  "mos",
+  "column_break_13",
+  "mos_percentage_completed",
+  "column_break_15",
+  "mos_status",
+  "jha_section_section",
+  "jha",
+  "column_break_19",
+  "jha_percentage_completed",
+  "column_break_21",
+  "jha_status",
+  "cse_section_section",
+  "cse",
+  "column_break_25",
+  "cse_percentage_completed",
+  "column_break_27",
+  "cse_status",
+  "lifting_plan_section_section",
+  "lifting_plan",
+  "column_break_31",
+  "lifting_percentage_completed",
+  "column_break_33",
+  "lifting_status",
+  "construction_section_section",
+  "construction_document",
+  "column_break_4",
+  "construction_percentage_completed",
+  "column_break_6",
+  "construction_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "mos",
+   "fieldtype": "Attach",
+   "label": "MOS"
+  },
+  {
+   "fieldname": "jha",
+   "fieldtype": "Attach",
+   "label": "JHA"
+  },
+  {
+   "fieldname": "cse",
+   "fieldtype": "Attach",
+   "label": "CSE"
+  },
+  {
+   "fieldname": "lifting_plan",
+   "fieldtype": "Attach",
+   "label": "Lifting Plan"
+  },
+  {
+   "fieldname": "construction_document",
+   "fieldtype": "Attach",
+   "label": "Construction Document"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "design_staff_holding",
+   "fieldtype": "Data",
+   "label": "Design Staff Holding"
+  },
+  {
+   "fieldname": "libeline_protection",
+   "fieldtype": "Data",
+   "label": "Libeline Protection"
+  },
+  {
+   "fieldname": "target_completion_date",
+   "fieldtype": "Date",
+   "label": "Target Completion Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nPending\nCompleted\nSent for Approval\nApproved"
+  },
+  {
+   "fieldname": "completed",
+   "fieldtype": "Data",
+   "label": "%Completed"
+  },
+  {
+   "fieldname": "mos_percentage_completed",
+   "fieldtype": "Data",
+   "label": "MOS Percentage Completed"
+  },
+  {
+   "fieldname": "mos_status",
+   "fieldtype": "Select",
+   "label": "MOS Status",
+   "options": "\nPending\nCompleted"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jha_percentage_completed",
+   "fieldtype": "Data",
+   "label": "JHA Percentage Completed"
+  },
+  {
+   "fieldname": "jha_status",
+   "fieldtype": "Select",
+   "label": "JHA Status",
+   "options": "\nPending\nCompleted"
+  },
+  {
+   "fieldname": "cse_percentage_completed",
+   "fieldtype": "Data",
+   "label": "CSE Percentage Completed"
+  },
+  {
+   "fieldname": "cse_status",
+   "fieldtype": "Select",
+   "label": "CSE Status",
+   "options": "\nPending\nCompleted"
+  },
+  {
+   "fieldname": "lifting_percentage_completed",
+   "fieldtype": "Data",
+   "label": "Lifting Percentage Completed"
+  },
+  {
+   "fieldname": "lifting_status",
+   "fieldtype": "Select",
+   "label": "Lifting Status",
+   "options": "\nPending\nCompleted"
+  },
+  {
+   "fieldname": "construction_percentage_completed",
+   "fieldtype": "Data",
+   "label": "Construction Percentage Completed"
+  },
+  {
+   "fieldname": "construction_status",
+   "fieldtype": "Select",
+   "label": "Construction Status",
+   "options": "\nPending\nCompleted"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "Project-.####"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Contract",
+   "options": "Contract",
+   "reqd": 1
+  },
+  {
+   "fieldname": "campaign",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Campaign",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mos_section_section",
+   "fieldtype": "Section Break",
+   "label": "MOS Section"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jha_section_section",
+   "fieldtype": "Section Break",
+   "label": "JHA Section"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cse_section_section",
+   "fieldtype": "Section Break",
+   "label": "CSE Section"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lifting_plan_section_section",
+   "fieldtype": "Section Break",
+   "label": "Lifting Plan Section"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "construction_section_section",
+   "fieldtype": "Section Break",
+   "label": "Construction Section"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-15 20:01:56.673524",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Project Document",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

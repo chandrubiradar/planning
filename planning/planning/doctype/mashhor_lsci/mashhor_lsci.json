@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-14 20:51:56.146980",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "title_",
+  "work_based_on",
+  "mashhor_lsci_project",
+  "mashhor_campaign",
+  "mashhor_work_order_lsci",
+  "column_break_5",
+  "excepted_start_date",
+  "excepted_end_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "work_based_on",
+   "fieldtype": "Select",
+   "label": "Work Based On",
+   "options": "\nCampaign\nProject."
+  },
+  {
+   "depends_on": "eval:doc.work_based_on == \"Campaign\"",
+   "fieldname": "mashhor_campaign",
+   "fieldtype": "Link",
+   "label": "Mashhor Campaign",
+   "options": "Mashhor Campaign"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "excepted_start_date",
+   "fieldtype": "Date",
+   "label": "Excepted Start Date"
+  },
+  {
+   "fieldname": "excepted_end_date",
+   "fieldtype": "Date",
+   "label": "Excepted End Date"
+  },
+  {
+   "fieldname": "mashhor_lsci_project",
+   "fieldtype": "Link",
+   "label": "Mashhor LSCI Project",
+   "options": "Mashhor Project"
+  },
+  {
+   "depends_on": "eval:doc.work_based_on == \"Campaign\"",
+   "fieldname": "mashhor_work_order_lsci",
+   "fieldtype": "Link",
+   "label": "Mashhor Work Order LSCi",
+   "options": "Project"
+  },
+  {
+   "default": "{Mashhor LSCI Project}",
+   "depends_on": "eval:doc.work_based_on == \"Project\"",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  },
+  {
+   "default": "{mashhor_work_order_lsci}",
+   "depends_on": "eval:doc.work_based_on == \"Campaign\"",
+   "fieldname": "title_",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Material Request",
+   "link_fieldname": "mashhor_project"
+  }
+ ],
+ "modified": "2023-03-14 21:55:52.754735",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Mashhor LSCI",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

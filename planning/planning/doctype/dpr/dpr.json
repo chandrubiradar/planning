@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-11-14 15:10:58.449244",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "report_name",
+  "maintenance_heading",
+  "won",
+  "description",
+  "variance",
+  "performance",
+  "column_break_5",
+  "earned",
+  "planned",
+  "forecast_cum_planned",
+  "forecast_cum_earned",
+  "no_activity_comments",
+  "variance_",
+  "plan_start",
+  "plan_finish",
+  "actual_start",
+  "actual_finish",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "won",
+   "fieldtype": "Link",
+   "label": "WON",
+   "options": "Project",
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "planned",
+   "fieldtype": "Data",
+   "label": "Cumm Planned%"
+  },
+  {
+   "fieldname": "earned",
+   "fieldtype": "Data",
+   "label": "Cumm Earned%"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "plan_start",
+   "fieldtype": "Date",
+   "label": "Plan Start"
+  },
+  {
+   "fieldname": "plan_finish",
+   "fieldtype": "Date",
+   "label": "Plan Finish"
+  },
+  {
+   "fieldname": "actual_start",
+   "fieldtype": "Date",
+   "label": "Actual Start"
+  },
+  {
+   "fieldname": "actual_finish",
+   "fieldtype": "Date",
+   "label": "Actual Finish"
+  },
+  {
+   "fieldname": "variance",
+   "fieldtype": "Data",
+   "label": "Variance"
+  },
+  {
+   "fieldname": "forecast_cum_planned",
+   "fieldtype": "Data",
+   "label": "Forecast Cum Planned%"
+  },
+  {
+   "fieldname": "forecast_cum_earned",
+   "fieldtype": "Data",
+   "label": "Forecast Cum Earned%"
+  },
+  {
+   "fieldname": "variance_",
+   "fieldtype": "Data",
+   "label": "Variance_"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "DPR-.####"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "DPR",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "report_name",
+   "fieldtype": "Data",
+   "label": "Report Name"
+  },
+  {
+   "fieldname": "maintenance_heading",
+   "fieldtype": "Data",
+   "label": "Maintenance Heading"
+  },
+  {
+   "fieldname": "no_activity_comments",
+   "fieldtype": "Text",
+   "label": "No Activity Comments"
+  },
+  {
+   "default": "0",
+   "fieldname": "performance",
+   "fieldtype": "Check",
+   "label": "Performance"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-13 20:09:50.375450",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "DPR",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

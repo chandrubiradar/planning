@@ -1,0 +1,196 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-11-14 15:21:07.682958",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "contract",
+  "completed",
+  "column_break_4",
+  "campaign",
+  "status",
+  "column_break_8",
+  "target_completion_date",
+  "hra_section_section",
+  "hra",
+  "column_break_11",
+  "hra_percentage_completed",
+  "column_break_13",
+  "hra_status",
+  "erp_section_section",
+  "erp",
+  "column_break_17",
+  "erp_percentage_completed",
+  "column_break_19",
+  "erp_status",
+  "hazid_section_section",
+  "hazid",
+  "column_break_23",
+  "hazid_percentage_completed",
+  "column_break_25",
+  "hazid_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "hra",
+   "fieldtype": "Attach",
+   "label": "HRA"
+  },
+  {
+   "fieldname": "erp",
+   "fieldtype": "Attach",
+   "label": "ERP"
+  },
+  {
+   "fieldname": "hazid",
+   "fieldtype": "Attach",
+   "label": "HAZID"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_completion_date",
+   "fieldtype": "Date",
+   "label": "Target Completion Date"
+  },
+  {
+   "fieldname": "completed",
+   "fieldtype": "Data",
+   "label": "%Completed"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nPending\nCompleted\nSent for Approval\nApproved"
+  },
+  {
+   "fieldname": "hra_percentage_completed",
+   "fieldtype": "Data",
+   "label": "HRA Percentage Completed"
+  },
+  {
+   "fieldname": "erp_percentage_completed",
+   "fieldtype": "Data",
+   "label": "ERP Percentage Completed"
+  },
+  {
+   "fieldname": "hazid_percentage_completed",
+   "fieldtype": "Data",
+   "label": "HAZID Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hra_status",
+   "fieldtype": "Select",
+   "label": "HRA Status",
+   "options": "\nIn Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "erp_status",
+   "fieldtype": "Select",
+   "label": "ERP Status",
+   "options": "\nPending\nCompleted"
+  },
+  {
+   "fieldname": "hazid_status",
+   "fieldtype": "Select",
+   "label": "HAZID Status",
+   "options": "\nPending\nCompleted"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "HSE-.####"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Contract",
+   "options": "Contract",
+   "reqd": 1
+  },
+  {
+   "fieldname": "campaign",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Campaign",
+   "reqd": 1
+  },
+  {
+   "fieldname": "hra_section_section",
+   "fieldtype": "Section Break",
+   "label": "HRA Section"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "erp_section_section",
+   "fieldtype": "Section Break",
+   "label": "ERP Section"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hazid_section_section",
+   "fieldtype": "Section Break",
+   "label": "HAZID Section"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-15 20:07:56.030992",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "HSE Document",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

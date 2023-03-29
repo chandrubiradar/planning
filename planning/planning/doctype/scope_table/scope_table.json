@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-27 19:08:05.656018",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rev",
+  "date",
+  "description_of_issue",
+  "drawn",
+  "checked",
+  "approved"
+ ],
+ "fields": [
+  {
+   "fieldname": "rev",
+   "fieldtype": "Data",
+   "label": "Rev"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "description_of_issue",
+   "fieldtype": "Data",
+   "label": "Description of Issue"
+  },
+  {
+   "fieldname": "drawn",
+   "fieldtype": "Data",
+   "label": "Drawn"
+  },
+  {
+   "fieldname": "checked",
+   "fieldtype": "Data",
+   "label": "Checked"
+  },
+  {
+   "fieldname": "approved",
+   "fieldtype": "Data",
+   "label": "Approved"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-27 19:08:05.656018",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Scope Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

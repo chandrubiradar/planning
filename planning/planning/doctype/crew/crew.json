@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-11-14 15:03:33.763566",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "crew_name",
+  "area_location",
+  "campaign",
+  "won",
+  "column_break_4",
+  "crew_count",
+  "planned_man_hrs",
+  "actual_man_hrs",
+  "supervisor",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "crew_name",
+   "fieldtype": "Data",
+   "label": "Crew Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "area_location",
+   "fieldtype": "Data",
+   "label": "Area /Location"
+  },
+  {
+   "fieldname": "campaign",
+   "fieldtype": "Data",
+   "label": "Campaign"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "crew_count",
+   "fieldtype": "Data",
+   "label": "Crew Count"
+  },
+  {
+   "fieldname": "planned_man_hrs",
+   "fieldtype": "Time",
+   "label": "Planned Man Hrs"
+  },
+  {
+   "fieldname": "actual_man_hrs",
+   "fieldtype": "Time",
+   "label": "Actual Man Hrs"
+  },
+  {
+   "fieldname": "supervisor",
+   "fieldtype": "Link",
+   "label": "Supervisor",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Crew",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "won",
+   "fieldtype": "Text",
+   "label": "WON"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "Crew-.####"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-12-14 14:51:30.561837",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Crew",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

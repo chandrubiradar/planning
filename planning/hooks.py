@@ -179,3 +179,4 @@ user_data_fields = [
 #	"planning.auth.validate"
 # ]
 
+fixtures = ['Custom Field','Project CSS Document']

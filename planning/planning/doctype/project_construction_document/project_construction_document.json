@@ -1,0 +1,320 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Construction-{project_id}",
+ "creation": "2023-02-20 17:29:18.947215",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "contract",
+  "libeline_protection",
+  "status",
+  "column_break_5",
+  "project_id",
+  "design_staff_holding",
+  "column_break_9",
+  "target_completion_date",
+  "completed",
+  "mos_section_section",
+  "mos",
+  "column_break_13",
+  "mos_percentage_completed",
+  "column_break_15",
+  "mos_status",
+  "mos_status_section",
+  "jha_section_section",
+  "jha",
+  "column_break_19",
+  "jha_percentage_completed",
+  "column_break_21",
+  "jha_status",
+  "jhaa_status",
+  "cse_section_section",
+  "cse",
+  "column_break_25",
+  "cse_percentage_completed",
+  "column_break_27",
+  "cse_status",
+  "cse__status",
+  "lifting_plan_section_section",
+  "lifting_plan",
+  "column_break_31",
+  "lifting_percentage_completed",
+  "column_break_33",
+  "lifting__status",
+  "lifting_status",
+  "construction_section_section",
+  "construction_document",
+  "column_break_4",
+  "construction_percentage_completed",
+  "column_break_6",
+  "construction_status",
+  "others_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "Project-.####"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Contract",
+   "options": "Contract",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "target_completion_date",
+   "fieldtype": "Date",
+   "label": "Target Completion Date"
+  },
+  {
+   "fieldname": "design_staff_holding",
+   "fieldtype": "Data",
+   "label": "Design Staff Holding"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_id",
+   "fieldtype": "Data",
+   "label": "Project ID"
+  },
+  {
+   "default": "0",
+   "fieldname": "completed",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "%Completed"
+  },
+  {
+   "fieldname": "libeline_protection",
+   "fieldtype": "Data",
+   "label": "Libeline Protection"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+  },
+  {
+   "fieldname": "mos_section_section",
+   "fieldtype": "Section Break",
+   "label": "MOS Section"
+  },
+  {
+   "fieldname": "mos",
+   "fieldtype": "Attach",
+   "label": "MOS"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mos_percentage_completed",
+   "fieldtype": "Data",
+   "label": "MOS Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mos_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "MOS Status"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "mos_status_section",
+   "fieldtype": "Select",
+   "label": "MOS Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "jha_section_section",
+   "fieldtype": "Section Break",
+   "label": "JHA Section"
+  },
+  {
+   "fieldname": "jha",
+   "fieldtype": "Attach",
+   "label": "JHA"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jha_percentage_completed",
+   "fieldtype": "Data",
+   "label": "JHA Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jha_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "JHA Status"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "jhaa_status",
+   "fieldtype": "Select",
+   "label": "JHA Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "cse_section_section",
+   "fieldtype": "Section Break",
+   "label": "CSE Section"
+  },
+  {
+   "fieldname": "cse",
+   "fieldtype": "Attach",
+   "label": "CSE"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cse_percentage_completed",
+   "fieldtype": "Data",
+   "label": "CSE Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cse_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "CSE Status"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "cse__status",
+   "fieldtype": "Select",
+   "label": "CSE_ Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "lifting_plan_section_section",
+   "fieldtype": "Section Break",
+   "label": "Lifting Plan Section"
+  },
+  {
+   "fieldname": "lifting_plan",
+   "fieldtype": "Attach",
+   "label": "Lifting Plan"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lifting_percentage_completed",
+   "fieldtype": "Data",
+   "label": "Lifting Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "lifting__status",
+   "fieldtype": "Select",
+   "label": "Lifting Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "lifting_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Lifting Status"
+  },
+  {
+   "fieldname": "construction_section_section",
+   "fieldtype": "Section Break",
+   "label": "Others"
+  },
+  {
+   "fieldname": "construction_document",
+   "fieldtype": "Attach",
+   "label": "Others Document"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "construction_percentage_completed",
+   "fieldtype": "Data",
+   "label": "Others Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "construction_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Construction Status"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "others_status",
+   "fieldtype": "Select",
+   "label": "Others_Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-20 17:31:24.437888",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Project Construction Document",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

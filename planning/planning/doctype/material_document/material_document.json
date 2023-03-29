@@ -1,0 +1,213 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Material-{campaign}-{won}",
+ "creation": "2022-11-14 15:24:00.175446",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "based_on",
+  "section_break_2",
+  "naming_series",
+  "contract",
+  "target_completion_date",
+  "column_break_4",
+  "project_id",
+  "campaign",
+  "completed",
+  "column_break_8",
+  "won",
+  "status",
+  "y_matl_mgc_section",
+  "y_matl_mgc",
+  "column_break_11",
+  "y_description",
+  "column_break_13",
+  "y_matl_percentage_completed",
+  "column_break_19",
+  "y_status",
+  "o_matl_mgc_section",
+  "o_matl_mgc",
+  "column_break_17",
+  "o_description",
+  "column_break_25",
+  "o_matl_percentage_completed",
+  "column_break_27",
+  "o_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "y_matl_mgc",
+   "fieldtype": "Attach",
+   "label": "Y Matl MGC"
+  },
+  {
+   "fieldname": "o_matl_mgc",
+   "fieldtype": "Attach",
+   "label": "O Matl MGC"
+  },
+  {
+   "default": "Today",
+   "fieldname": "target_completion_date",
+   "fieldtype": "Date",
+   "label": "Target Completion Date"
+  },
+  {
+   "fieldname": "completed",
+   "fieldtype": "Int",
+   "label": "%Completed"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "y_matl_percentage_completed",
+   "fieldtype": "Data",
+   "label": "Y Matl Percentage Completed"
+  },
+  {
+   "fieldname": "o_matl_percentage_completed",
+   "fieldtype": "Data",
+   "label": "O Matl Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "Material-.####"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Contract",
+   "options": "Contract",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.based_on == 'Campaign Readiness' || doc.based_on == ''",
+   "fieldname": "campaign",
+   "fieldtype": "Data",
+   "label": "Campaign"
+  },
+  {
+   "fieldname": "y_matl_mgc_section",
+   "fieldtype": "Section Break",
+   "label": "Y Matl MGC"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "o_matl_mgc_section",
+   "fieldtype": "Section Break",
+   "label": "O Matl MGC"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.based_on == 'Campaign Readiness' || doc.based_on == ''",
+   "fieldname": "won",
+   "fieldtype": "Link",
+   "label": "WON",
+   "options": "Project"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "y_status",
+   "fieldtype": "Select",
+   "label": "Y Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "o_status",
+   "fieldtype": "Select",
+   "label": "O Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "based_on",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Based On",
+   "options": "\nCampaign Readiness\nProject Readiness"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.based_on == 'Project Readiness'",
+   "fieldname": "project_id",
+   "fieldtype": "Data",
+   "label": "Project ID"
+  },
+  {
+   "fieldname": "y_description",
+   "fieldtype": "Text",
+   "label": "Y Description"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "o_description",
+   "fieldtype": "Text",
+   "label": "O Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-02-23 13:43:01.688988",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Material Document",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

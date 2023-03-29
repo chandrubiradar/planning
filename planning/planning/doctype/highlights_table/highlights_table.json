@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-02-07 14:28:33.654979",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "next_project",
+  "planned_activity",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "next_project",
+   "fieldtype": "Link",
+   "label": "Next Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "planned_activity",
+   "fieldtype": "Text",
+   "label": "Planned Activity"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-02-07 14:31:51.048596",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Highlights Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
