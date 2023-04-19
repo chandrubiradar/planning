@@ -11,20 +11,26 @@
   "workflow_state",
   "contract",
   "completed",
+  "co_ordinator_approved_date",
   "column_break_5",
   "project_id",
   "status",
+  "client_approved_date",
   "column_break_8",
   "target_completion_date",
   "pcm_section_section",
   "pcm",
   "column_break_12",
-  "pcm_percentage_completed",
+  "pcm_description",
   "column_break_14",
+  "pcm_percentage_completed",
+  "column_break_16",
   "pcm_status",
   "po_section_section",
   "po",
   "column_break_58",
+  "po_description",
+  "column_break_22",
   "po_percentage_completed",
   "column_break_20",
   "po_status"
@@ -66,15 +72,16 @@
   },
   {
    "fieldname": "project_id",
-   "fieldtype": "Data",
-   "label": "Project ID"
+   "fieldtype": "Link",
+   "label": "Project ID",
+   "options": "Mashhor Project"
   },
   {
    "default": "In Progress",
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "column_break_8",
@@ -145,11 +152,39 @@
    "fieldtype": "Select",
    "label": "PO Status",
    "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "pcm_description",
+   "fieldtype": "Text",
+   "label": "PCM Description"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "po_description",
+   "fieldtype": "Text",
+   "label": "PO Description"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved Date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Date",
+   "label": "Client Approved Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-20 17:50:38.156103",
+ "modified": "2023-04-05 13:31:50.333030",
  "modified_by": "Administrator",
  "module": "Planning",
  "name": "Project QS Document",

@@ -1,0 +1,320 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:QC-{project_id}",
+ "creation": "2023-04-04 15:36:47.429039",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "contract",
+  "completed",
+  "co_ordinator_approved_date",
+  "column_break_5",
+  "stand_alone_id",
+  "status",
+  "client_approved_date",
+  "column_break_13",
+  "target_completion_date",
+  "welding_section_section",
+  "welding_inspection",
+  "column_break_18",
+  "welding_percentage_completed",
+  "column_break_20",
+  "welding__status",
+  "qc_section_section",
+  "qc_document",
+  "column_break_12",
+  "qc_percentage_completed",
+  "column_break_14",
+  "hydro_status",
+  "blasting_section_section",
+  "blasting",
+  "column_break_24",
+  "blasting_percentage_completed",
+  "column_break_26",
+  "blasting__status",
+  "painting_section_section",
+  "painting",
+  "column_break_30",
+  "painting_percentage_completed",
+  "column_break_32",
+  "painting__status",
+  "site_installation_section_section",
+  "site_installation",
+  "column_break_37",
+  "site_installation_percentage",
+  "column_break_39",
+  "site_inst_status",
+  "qcdp_section_section",
+  "qcdp",
+  "column_break_43",
+  "qcdp_percentage",
+  "column_break_45",
+  "qcdp_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "QC-.####"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Contract",
+   "options": "Contract",
+   "reqd": 1
+  },
+  {
+   "fieldname": "completed",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "%Completed"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stand_alone_id",
+   "fieldtype": "Link",
+   "label": "Stand Alone ID",
+   "options": "SCI Stand Alone"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "target_completion_date",
+   "fieldtype": "Date",
+   "label": "Target Completion Date"
+  },
+  {
+   "fieldname": "welding_section_section",
+   "fieldtype": "Section Break",
+   "label": "Welding Section"
+  },
+  {
+   "fieldname": "welding_inspection",
+   "fieldtype": "Attach",
+   "label": "Welding Inspection"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "welding_percentage_completed",
+   "fieldtype": "Data",
+   "label": "Welding Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "welding__status",
+   "fieldtype": "Select",
+   "label": "Welding Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "qc_section_section",
+   "fieldtype": "Section Break",
+   "label": "Hydro Test Section"
+  },
+  {
+   "fieldname": "qc_document",
+   "fieldtype": "Attach",
+   "label": "Hydro Test Document"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qc_percentage_completed",
+   "fieldtype": "Data",
+   "label": "Hydro Test Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "hydro_status",
+   "fieldtype": "Select",
+   "label": "Hydro Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "blasting_section_section",
+   "fieldtype": "Section Break",
+   "label": "Blasting Section"
+  },
+  {
+   "fieldname": "blasting",
+   "fieldtype": "Attach",
+   "label": "Blasting"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "blasting_percentage_completed",
+   "fieldtype": "Data",
+   "label": "Blasting Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "blasting__status",
+   "fieldtype": "Select",
+   "label": "Blasting Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "painting_section_section",
+   "fieldtype": "Section Break",
+   "label": "Painting Section"
+  },
+  {
+   "fieldname": "painting",
+   "fieldtype": "Attach",
+   "label": "Painting"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "painting_percentage_completed",
+   "fieldtype": "Data",
+   "label": "Painting Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "painting__status",
+   "fieldtype": "Select",
+   "label": "Painting Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "site_installation_section_section",
+   "fieldtype": "Section Break",
+   "label": "Site Installation Section"
+  },
+  {
+   "fieldname": "site_installation",
+   "fieldtype": "Attach",
+   "label": "Site Installation"
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_installation_percentage",
+   "fieldtype": "Data",
+   "label": "Site Installation Percentage"
+  },
+  {
+   "fieldname": "column_break_39",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "site_inst_status",
+   "fieldtype": "Select",
+   "label": "Site inst Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "qcdp_section_section",
+   "fieldtype": "Section Break",
+   "label": "QCDP Section"
+  },
+  {
+   "fieldname": "qcdp",
+   "fieldtype": "Attach",
+   "label": "QCDP"
+  },
+  {
+   "fieldname": "column_break_43",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qcdp_percentage",
+   "fieldtype": "Data",
+   "label": "QCDP Percentage"
+  },
+  {
+   "fieldname": "column_break_45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qcdp_status",
+   "fieldtype": "Select",
+   "label": "QCDP Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved Date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Data",
+   "label": "Client Approved Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-06 16:54:23.934980",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "SSA QC Document",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

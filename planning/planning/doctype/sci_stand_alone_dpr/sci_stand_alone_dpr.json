@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: {sci_project}/{contract_no}",
+ "creation": "2023-04-11 22:14:04.684224",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "contract_no",
+  "prepared_by",
+  "accepted_by",
+  "column_break_6",
+  "contract_title",
+  "checked_by",
+  "reviewed_by",
+  "section_break_9",
+  "report_number",
+  "cumplanned",
+  "cumactual",
+  "column_break_11",
+  "date",
+  "issue_date",
+  "sci_stand_alone",
+  "section_break_14",
+  "sci_stand_alone_table",
+  "section_break_19",
+  "issues_and_concern"
+ ],
+ "fields": [
+  {
+   "fieldname": "contract_no",
+   "fieldtype": "Data",
+   "label": "Contract No"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "label": "Prepared By"
+  },
+  {
+   "fieldname": "accepted_by",
+   "fieldtype": "Data",
+   "label": "Accepted By"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contract_title",
+   "fieldtype": "Link",
+   "label": "Contract Title",
+   "options": "Contract"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "Checked By"
+  },
+  {
+   "fieldname": "reviewed_by",
+   "fieldtype": "Data",
+   "label": "Reviewed By"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "report_number",
+   "fieldtype": "Data",
+   "label": "Report Number"
+  },
+  {
+   "fieldname": "cumplanned",
+   "fieldtype": "Data",
+   "label": "Cum.Planned%"
+  },
+  {
+   "fieldname": "cumactual",
+   "fieldtype": "Data",
+   "label": "Cum.Actual%"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "sci_stand_alone",
+   "fieldtype": "Link",
+   "label": "SCI Stand Alone",
+   "options": "SCI Stand Alone"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sci_stand_alone_table",
+   "fieldtype": "Table",
+   "label": "SCI Stand Alone Table",
+   "options": "Stand Alone details table"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "issues_and_concern",
+   "fieldtype": "Text",
+   "label": "Issues and Concern"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-12 13:07:51.822030",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "SCI Stand Alone DPR",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-03 21:10:11.317797",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sci_project",
+  "plan_start",
+  "plan_finish",
+  "planned_hours",
+  "actual_start",
+  "actual_finish",
+  "actual_hours",
+  "cumplan",
+  "cumactual",
+  "variance"
+ ],
+ "fields": [
+  {
+   "fieldname": "sci_project",
+   "fieldtype": "Link",
+   "label": "SCI Project",
+   "options": "SCI Project"
+  },
+  {
+   "fieldname": "plan_start",
+   "fieldtype": "Datetime",
+   "label": "Plan Start"
+  },
+  {
+   "fieldname": "plan_finish",
+   "fieldtype": "Datetime",
+   "label": "Plan Finish"
+  },
+  {
+   "fieldname": "planned_hours",
+   "fieldtype": "Data",
+   "label": "Planned Hours"
+  },
+  {
+   "fieldname": "actual_start",
+   "fieldtype": "Datetime",
+   "label": "Actual Start"
+  },
+  {
+   "fieldname": "actual_finish",
+   "fieldtype": "Datetime",
+   "label": "Actual Finish"
+  },
+  {
+   "fieldname": "actual_hours",
+   "fieldtype": "Data",
+   "label": "Actual Hours"
+  },
+  {
+   "fieldname": "cumplan",
+   "fieldtype": "Data",
+   "label": "Cum.Plan%"
+  },
+  {
+   "fieldname": "cumactual",
+   "fieldtype": "Data",
+   "label": "Cum.Actual%"
+  },
+  {
+   "fieldname": "variance",
+   "fieldtype": "Data",
+   "label": "Variance%"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-04-03 21:10:11.317797",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "SCI Project Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

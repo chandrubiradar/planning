@@ -1,0 +1,189 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:BagTag-{campaign}-{won}",
+ "creation": "2023-03-31 21:53:14.068406",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "based_on",
+  "section_break_2",
+  "naming_series",
+  "contract",
+  "target_completion_date",
+  "co_ordinator_approved_date",
+  "column_break_3",
+  "project_id",
+  "campaign",
+  "completed",
+  "client_approved_date",
+  "column_break_6",
+  "won",
+  "status",
+  "bag_and_tag_section",
+  "bag_and_tag",
+  "column_break_11",
+  "bagtag_descrption",
+  "column_break_13",
+  "bag_and_tag_completed",
+  "column_break_20",
+  "bag_and_tag_status",
+  "bagtag_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "based_on",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Based On",
+   "options": "\nCampaign Readiness Test 1\nProject Readiness"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "BagTag-.####"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Contract",
+   "options": "Contract",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "target_completion_date",
+   "fieldtype": "Date",
+   "label": "Target Completion Date"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.based_on== 'Project Readiness'",
+   "fieldname": "project_id",
+   "fieldtype": "Data",
+   "label": "Project ID"
+  },
+  {
+   "depends_on": "eval:doc.based_on == 'Campaign Readiness' || doc.based_on == ''",
+   "fieldname": "campaign",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Campaign"
+  },
+  {
+   "default": "0",
+   "fieldname": "completed",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "%Completed"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.based_on == 'Campaign Readiness' || doc.based_on == ''",
+   "fieldname": "won",
+   "fieldtype": "Link",
+   "label": "SCI WON",
+   "options": "SCI Campaign"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
+  },
+  {
+   "fieldname": "bag_and_tag_section",
+   "fieldtype": "Section Break",
+   "label": "Bag and Tag"
+  },
+  {
+   "fieldname": "bag_and_tag",
+   "fieldtype": "Attach",
+   "label": "Bag and Tag"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bagtag_descrption",
+   "fieldtype": "Text",
+   "label": "BagTag Descrption"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bag_and_tag_completed",
+   "fieldtype": "Data",
+   "label": "Bag and Tag Completed"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bag_and_tag_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Bag and Tag Status"
+  },
+  {
+   "fieldname": "bagtag_status",
+   "fieldtype": "Select",
+   "label": "BagTag Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved Date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Date",
+   "label": "Client Approved Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-06 17:17:51.464799",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "SCI Bag and Tag",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

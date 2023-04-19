@@ -10,16 +10,20 @@
   "naming_series",
   "contract",
   "completed",
+  "co_ordinator_approved_date",
   "column_break_4",
   "project_id",
   "status",
+  "client_approved_date",
   "column_break_7",
   "target_completion_date",
   "css_section_section",
   "css",
   "column_break_11",
-  "css_percentage_completed",
+  "description",
   "column_break_13",
+  "css_percentage_completed",
+  "column_break_15",
   "css_status"
  ],
  "fields": [
@@ -51,8 +55,9 @@
   },
   {
    "fieldname": "project_id",
-   "fieldtype": "Data",
-   "label": "Project ID"
+   "fieldtype": "Link",
+   "label": "Project ID",
+   "options": "Mashhor Project"
   },
   {
    "default": "0",
@@ -70,7 +75,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "css_section_section",
@@ -100,11 +105,30 @@
    "fieldtype": "Select",
    "label": "CSS Status",
    "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved Date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Date",
+   "label": "Client Approved Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-20 17:23:01.514763",
+ "modified": "2023-04-05 13:16:12.152887",
  "modified_by": "Administrator",
  "module": "Planning",
  "name": "Project CSS Document",

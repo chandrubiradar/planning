@@ -241,7 +241,7 @@
    "fieldname": "design_status",
    "fieldtype": "Select",
    "label": "Design Status",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "column_break_232",
@@ -288,7 +288,7 @@
    "fieldname": "css_status_",
    "fieldtype": "Select",
    "label": "CSS Status_",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "column_break_22",
@@ -334,7 +334,7 @@
    "fieldname": "construction_status",
    "fieldtype": "Select",
    "label": "Construction Status",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "column_break_40",
@@ -380,7 +380,7 @@
    "fieldname": "planning_status",
    "fieldtype": "Select",
    "label": "Planning Status",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "column_break_48",
@@ -426,7 +426,7 @@
    "fieldname": "hse_status_",
    "fieldtype": "Select",
    "label": "HSE Status_",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "column_break_28",
@@ -472,7 +472,7 @@
    "fieldname": "qc_status",
    "fieldtype": "Select",
    "label": "QC Status",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "column_break_67",
@@ -518,7 +518,7 @@
    "fieldname": "material_status",
    "fieldtype": "Select",
    "label": "Material Status",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "column_break_76",
@@ -564,7 +564,7 @@
    "fieldname": "bagtag_status",
    "fieldtype": "Select",
    "label": "BagTag Status",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "column_break_85",
@@ -610,7 +610,7 @@
    "fieldname": "qs_status",
    "fieldtype": "Select",
    "label": "QS Status",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "column_break_94",
@@ -661,7 +661,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-03-24 18:31:08.843797",
+ "modified": "2023-04-04 18:38:39.507174",
  "modified_by": "Administrator",
  "module": "Planning",
  "name": "WON Readiness",

@@ -1,0 +1,365 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Design-{project_id}",
+ "creation": "2023-04-04 15:23:58.853325",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "contract",
+  "completed",
+  "indicator",
+  "co_ordinator_approved_date",
+  "column_break_4",
+  "stand_alone_id",
+  "status",
+  "client_approved_date",
+  "column_break_7",
+  "target_completion_date",
+  "aendwe_section_section",
+  "workpack_table",
+  "aen",
+  "workpack",
+  "mgc",
+  "column_break_15",
+  "aen_percentage",
+  "mgc_percentage",
+  "column_break_18",
+  "aen_status",
+  "mgc_status",
+  "cirass_document_section_section",
+  "cirass_report",
+  "column_break_11",
+  "cirass_percentage_completed",
+  "column_break_13",
+  "cirass__status",
+  "cirass_status",
+  "site_survey_section_section",
+  "site_survey",
+  "column_break_17",
+  "site_survey_percentage",
+  "column_break_19",
+  "site_status",
+  "jobcard_section_section",
+  "jobcard",
+  "column_break_23",
+  "jobcard_percentage",
+  "column_break_25",
+  "jobcard_status",
+  "mat_sap_input_section_section",
+  "mat_sap_input",
+  "column_break_35",
+  "mat_percentage",
+  "column_break_99",
+  "mat_status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series"
+  },
+  {
+   "columns": 1,
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Contract",
+   "options": "Contract",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "completed",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "%Completed"
+  },
+  {
+   "fieldname": "indicator",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Indicator"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "default": "In Progress",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "target_completion_date",
+   "fieldtype": "Date",
+   "label": "Target Completion Date"
+  },
+  {
+   "fieldname": "aendwe_section_section",
+   "fieldtype": "Section Break",
+   "label": "Workpack Section"
+  },
+  {
+   "fieldname": "workpack_table",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Workpack Table",
+   "options": "Workpack Table"
+  },
+  {
+   "fieldname": "aen",
+   "fieldtype": "Attach",
+   "hidden": 1,
+   "label": "Workpack"
+  },
+  {
+   "fieldname": "workpack",
+   "fieldtype": "Link",
+   "label": "Workpack",
+   "options": "Drawing Document"
+  },
+  {
+   "fieldname": "mgc",
+   "fieldtype": "Attach",
+   "hidden": 1,
+   "label": "MGC",
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "aen_percentage",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Workpack Percentage"
+  },
+  {
+   "default": "0",
+   "fieldname": "mgc_percentage",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "MGC Percentage"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "aen_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Workpack Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "mgc_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "MGC Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "cirass_document_section_section",
+   "fieldtype": "Section Break",
+   "label": "CIRASS Document Section"
+  },
+  {
+   "fieldname": "cirass_report",
+   "fieldtype": "Attach",
+   "label": "CIRASS Report"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cirass_percentage_completed",
+   "fieldtype": "Data",
+   "label": "Design Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "cirass__status",
+   "fieldtype": "Select",
+   "label": "CIRASS Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "cirass_status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "CIRASS Status"
+  },
+  {
+   "fieldname": "site_survey_section_section",
+   "fieldtype": "Section Break",
+   "label": "Site Survey Section"
+  },
+  {
+   "fieldname": "site_survey",
+   "fieldtype": "Attach",
+   "label": "Site Survey"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "site_survey_percentage",
+   "fieldtype": "Data",
+   "label": "Site Survey Percentage"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_status",
+   "fieldtype": "Select",
+   "label": "Site Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "jobcard_section_section",
+   "fieldtype": "Section Break",
+   "label": "Jobcard Section"
+  },
+  {
+   "fieldname": "jobcard",
+   "fieldtype": "Attach",
+   "label": "Jobcard"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "jobcard_percentage",
+   "fieldtype": "Data",
+   "label": "Jobcard Percentage"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jobcard_status",
+   "fieldtype": "Select",
+   "label": "Jobcard Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "mat_sap_input_section_section",
+   "fieldtype": "Section Break",
+   "label": "Mat SAP Input Section"
+  },
+  {
+   "fieldname": "mat_sap_input",
+   "fieldtype": "Attach",
+   "label": "Mat SAP Input"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "mat_percentage",
+   "fieldtype": "Data",
+   "label": "Mat Percentage"
+  },
+  {
+   "fieldname": "column_break_99",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mat_status",
+   "fieldtype": "Select",
+   "label": "Mat Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SSA Design Workpack Document",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SSA Design Workpack Document",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "stand_alone_id",
+   "fieldtype": "Link",
+   "label": "Stand Alone ID",
+   "options": "SCI Stand Alone"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved Date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Date",
+   "label": "Client Approved Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-04-06 16:28:37.994669",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "SSA Design Workpack Document",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "translated_doctype": 1
+}

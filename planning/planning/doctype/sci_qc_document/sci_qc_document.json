@@ -1,0 +1,512 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:QC-{campaign}-{won}",
+ "creation": "2023-03-31 21:45:14.870715",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "based_on",
+  "section_break_2",
+  "naming_series",
+  "contract",
+  "target_completion_date",
+  "co_ordinator_approved_date",
+  "column_break_5",
+  "project_id",
+  "campaign",
+  "completed",
+  "client_approved_date",
+  "column_break_13",
+  "won",
+  "status",
+  "fit_up_section_section",
+  "attach_14",
+  "column_break_15",
+  "fit_up_description",
+  "column_break_17",
+  "fit_up_percentage",
+  "column_break_19",
+  "fit_up_status",
+  "welding_section_section",
+  "welding_inspection",
+  "column_break_18",
+  "welding_description",
+  "column_break_20",
+  "welding_percentage_completed",
+  "column_break_27",
+  "welding__status",
+  "ndt_inspection_section_section",
+  "attach_24",
+  "column_break_31",
+  "ndt_inspection_description",
+  "column_break_33",
+  "ndt_inspection_percentage",
+  "column_break_35",
+  "ndt_inspection_status",
+  "qc_section_section",
+  "qc_document",
+  "column_break_12",
+  "hydro_description",
+  "column_break_14",
+  "qc_percentage_completed",
+  "column_break_43",
+  "hydro_status",
+  "blasting_section_section",
+  "blasting",
+  "column_break_24",
+  "blasting_description",
+  "column_break_26",
+  "blasting_percentage_completed",
+  "column_break_51",
+  "blasting__status",
+  "painting_section_section",
+  "painting",
+  "column_break_30",
+  "painting_description",
+  "column_break_32",
+  "painting_percentage_completed",
+  "column_break_59",
+  "painting__status",
+  "site_installation_section_section",
+  "site_installation",
+  "column_break_37",
+  "site_inst_description",
+  "column_break_39",
+  "site_installation_percentage",
+  "column_break_67",
+  "site_inst_status",
+  "qcdp_section_section",
+  "qcdp",
+  "column_break_55",
+  "qcdp_description",
+  "column_break_45",
+  "qcdp_percentage",
+  "column_break_75",
+  "qcdp_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "based_on",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Based On",
+   "options": "\nCampaign Readiness Test 1\nProject Readiness"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "QC-.####"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Contract",
+   "options": "Contract",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "target_completion_date",
+   "fieldtype": "Date",
+   "label": "Target Completion Date"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.based_on == 'Project Readiness'",
+   "fieldname": "project_id",
+   "fieldtype": "Data",
+   "label": "Project ID"
+  },
+  {
+   "depends_on": "eval:doc.based_on == 'Campaign Readiness' || doc.based_on == \"\"",
+   "fieldname": "campaign",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Campaign"
+  },
+  {
+   "default": "0",
+   "fieldname": "completed",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "%Completed"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.based_on == 'Campaign Readiness' || doc.based_on == \"\"",
+   "fieldname": "won",
+   "fieldtype": "Link",
+   "label": "SCI WON",
+   "options": "SCI Campaign"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
+  },
+  {
+   "fieldname": "fit_up_section_section",
+   "fieldtype": "Section Break",
+   "label": "Fit Up Section"
+  },
+  {
+   "fieldname": "attach_14",
+   "fieldtype": "Attach",
+   "label": "Fit Up"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fit_up_description",
+   "fieldtype": "Text",
+   "label": "Fit Up Description"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fit_up_percentage",
+   "fieldtype": "Int",
+   "label": "Fit Up Percentage"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "fit_up_status",
+   "fieldtype": "Select",
+   "label": "Fit Up Status",
+   "options": "\nIn Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "welding_section_section",
+   "fieldtype": "Section Break",
+   "label": "Welding Section"
+  },
+  {
+   "fieldname": "welding_inspection",
+   "fieldtype": "Attach",
+   "label": "Welding Inspection"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "welding_description",
+   "fieldtype": "Text",
+   "label": "Welding Description"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "welding_percentage_completed",
+   "fieldtype": "Data",
+   "label": "Welding Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "welding__status",
+   "fieldtype": "Select",
+   "label": "Welding Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "ndt_inspection_section_section",
+   "fieldtype": "Section Break",
+   "label": "NDT Inspection Section"
+  },
+  {
+   "fieldname": "attach_24",
+   "fieldtype": "Attach",
+   "label": "NDT Inspection"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ndt_inspection_description",
+   "fieldtype": "Text",
+   "label": "NDT Inspection Description"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ndt_inspection_percentage",
+   "fieldtype": "Int",
+   "label": "NDT Inspection Percentage"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "ndt_inspection_status",
+   "fieldtype": "Select",
+   "label": "NDT Inspection Status",
+   "options": "\nIn Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "qc_section_section",
+   "fieldtype": "Section Break",
+   "label": "Hydro Test Section"
+  },
+  {
+   "fieldname": "qc_document",
+   "fieldtype": "Attach",
+   "label": "Hydro Test Document"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hydro_description",
+   "fieldtype": "Text",
+   "label": "Hydro Description"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qc_percentage_completed",
+   "fieldtype": "Data",
+   "label": "Hydro Test Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_43",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "hydro_status",
+   "fieldtype": "Select",
+   "label": "Hydro Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "blasting_section_section",
+   "fieldtype": "Section Break",
+   "label": "Blasting Section"
+  },
+  {
+   "fieldname": "blasting",
+   "fieldtype": "Attach",
+   "label": "Blasting"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "blasting_description",
+   "fieldtype": "Text",
+   "label": "Blasting Description"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "blasting_percentage_completed",
+   "fieldtype": "Data",
+   "label": "Blasting Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "blasting__status",
+   "fieldtype": "Select",
+   "label": "Blasting Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "painting_section_section",
+   "fieldtype": "Section Break",
+   "label": "Painting Section"
+  },
+  {
+   "fieldname": "painting",
+   "fieldtype": "Attach",
+   "label": "Painting"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "painting_description",
+   "fieldtype": "Text",
+   "label": "Painting Description"
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "painting_percentage_completed",
+   "fieldtype": "Data",
+   "label": "Painting Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_59",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "painting__status",
+   "fieldtype": "Select",
+   "label": "Painting Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "site_installation_section_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Site Installation Section"
+  },
+  {
+   "fieldname": "site_installation",
+   "fieldtype": "Attach",
+   "label": "Site Installation"
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_inst_description",
+   "fieldtype": "Text",
+   "label": "Site Inst Description"
+  },
+  {
+   "fieldname": "column_break_39",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_installation_percentage",
+   "fieldtype": "Data",
+   "label": "Site Installation Percentage"
+  },
+  {
+   "fieldname": "column_break_67",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "site_inst_status",
+   "fieldtype": "Select",
+   "label": "Site inst Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "qcdp_section_section",
+   "fieldtype": "Section Break",
+   "label": "Shop Fabrication QCDP Section"
+  },
+  {
+   "fieldname": "qcdp",
+   "fieldtype": "Attach",
+   "label": "QCDP"
+  },
+  {
+   "fieldname": "column_break_55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qcdp_description",
+   "fieldtype": "Text",
+   "label": "QCDP Description"
+  },
+  {
+   "fieldname": "column_break_45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qcdp_percentage",
+   "fieldtype": "Data",
+   "label": "QCDP Percentage"
+  },
+  {
+   "fieldname": "column_break_75",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qcdp_status",
+   "fieldtype": "Select",
+   "label": "QCDP Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved Date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Date",
+   "label": "Client Approved Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-06 16:55:07.199199",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "SCI QC Document",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

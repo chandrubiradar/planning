@@ -11,9 +11,11 @@
   "contract",
   "completed",
   "indicator",
+  "co_ordinator_approved_date",
   "column_break_4",
   "project_id",
   "status",
+  "client_approved_date",
   "column_break_7",
   "target_completion_date",
   "aendwe_section_section",
@@ -22,6 +24,8 @@
   "workpack",
   "mgc",
   "column_break_15",
+  "workpack_description",
+  "column_break_17",
   "aen_percentage",
   "mgc_percentage",
   "column_break_18",
@@ -30,25 +34,33 @@
   "cirass_document_section_section",
   "cirass_report",
   "column_break_11",
+  "description",
+  "column_break_27",
   "cirass_percentage_completed",
   "column_break_13",
   "cirass__status",
   "cirass_status",
   "site_survey_section_section",
   "site_survey",
-  "column_break_17",
+  "column_break_34",
+  "site_description",
+  "column_break_36",
   "site_survey_percentage",
   "column_break_19",
   "site_status",
   "jobcard_section_section",
   "jobcard",
   "column_break_23",
+  "jobcard_description",
+  "column_break_44",
   "jobcard_percentage",
   "column_break_25",
   "jobcard_status",
   "mat_sap_input_section_section",
   "mat_sap_input",
   "column_break_35",
+  "mat_sap_perceatge",
+  "column_break_52",
   "mat_percentage",
   "column_break_99",
   "mat_status",
@@ -89,9 +101,10 @@
   },
   {
    "fieldname": "project_id",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_standard_filter": 1,
-   "label": "Project ID"
+   "label": "Project ID",
+   "options": "Mashhor Project"
   },
   {
    "allow_on_submit": 1,
@@ -111,7 +124,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "aendwe_section_section",
@@ -128,12 +141,12 @@
   {
    "fieldname": "aen",
    "fieldtype": "Attach",
-   "hidden": 1,
    "label": "Workpack"
   },
   {
    "fieldname": "workpack",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Workpack",
    "options": "Drawing Document"
   },
@@ -152,7 +165,6 @@
    "default": "0",
    "fieldname": "aen_percentage",
    "fieldtype": "Data",
-   "hidden": 1,
    "label": "Workpack Percentage"
   },
   {
@@ -169,7 +181,6 @@
   {
    "fieldname": "aen_status",
    "fieldtype": "Select",
-   "hidden": 1,
    "label": "Workpack Status",
    "options": "In Progress\nCompleted\nNot Applicable"
   },
@@ -323,12 +334,67 @@
    "options": "Project Design Workpack Document",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "workpack_description",
+   "fieldtype": "Text",
+   "label": "Workpack Description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "site_description",
+   "fieldtype": "Text",
+   "label": "Site Description"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jobcard_description",
+   "fieldtype": "Text",
+   "label": "Jobcard Description"
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mat_sap_perceatge",
+   "fieldtype": "Text",
+   "label": "Mat Sap Description"
+  },
+  {
+   "fieldname": "column_break_52",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved Date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Date",
+   "label": "Client Approved Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-02-20 18:58:08.354209",
+ "modified": "2023-04-05 13:14:13.107305",
  "modified_by": "Administrator",
  "module": "Planning",
  "name": "Project Design Workpack Document",

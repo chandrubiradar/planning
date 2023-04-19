@@ -12,10 +12,12 @@
   "naming_series",
   "contract",
   "target_completion_date",
+  "co_ordinator_approved_date",
   "column_break_5",
   "project_id",
   "campaign",
   "completed",
+  "client_approved_date",
   "column_break_13",
   "won",
   "status",
@@ -126,7 +128,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "qc_percentage_completed",
@@ -328,7 +330,7 @@
    "fieldtype": "Select",
    "hidden": 1,
    "label": "Based On",
-   "options": "\nCampaign Readiness\nProject Readiness"
+   "options": "\nCampaign Readiness Test 1\nProject Readiness"
   },
   {
    "fieldname": "section_break_2",
@@ -471,11 +473,21 @@
   {
    "fieldname": "column_break_75",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Date",
+   "label": "Client Approved Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-24 17:54:27.754538",
+ "modified": "2023-04-04 18:53:12.390498",
  "modified_by": "Administrator",
  "module": "Planning",
  "name": "QC Document",

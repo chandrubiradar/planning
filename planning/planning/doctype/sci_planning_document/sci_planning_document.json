@@ -1,0 +1,230 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Planning-{campaign}-{won}",
+ "creation": "2023-03-31 21:42:21.296543",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "based_on",
+  "section_break_2",
+  "naming_series",
+  "contract",
+  "target_completion_date",
+  "co_ordinator_approved_date",
+  "column_break_4",
+  "project_id",
+  "campaign",
+  "completed",
+  "client_approved_date",
+  "column_break_6",
+  "won",
+  "status",
+  "l4l5_section_section",
+  "l4l5_planning_documents",
+  "column_break_11",
+  "l4l5_description",
+  "column_break_13",
+  "l4l5_percentage_completed",
+  "column_break_17",
+  "l4l5_status",
+  "l2l3_section_section",
+  "l2l3_planning_documents",
+  "column_break_21",
+  "l2l3_description",
+  "column_break_25",
+  "l2l3_percentage_completed",
+  "column_break_27",
+  "l2l3_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "based_on",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Based On",
+   "options": "\nCampaign Readiness Test 1\nProject Readiness"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "Planning-.####"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Contract",
+   "options": "Contract",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "target_completion_date",
+   "fieldtype": "Date",
+   "label": "Target Completion Date"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.based_on == 'Project Readiness'",
+   "fieldname": "project_id",
+   "fieldtype": "Data",
+   "label": "Project ID"
+  },
+  {
+   "depends_on": "eval:doc.based_on == 'Campaign Readiness' || doc.based_on == ''",
+   "fieldname": "campaign",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Campaign"
+  },
+  {
+   "default": "0",
+   "fieldname": "completed",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "%Completed"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.based_on == 'Campaign Readiness' || doc.based_on == ''",
+   "fieldname": "won",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "SCI WON",
+   "options": "SCI Campaign"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
+  },
+  {
+   "fieldname": "l4l5_section_section",
+   "fieldtype": "Section Break",
+   "label": "L4/L5 Section"
+  },
+  {
+   "fieldname": "l4l5_planning_documents",
+   "fieldtype": "Attach",
+   "label": "L4/L5 Planning Documents"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "l4l5_description",
+   "fieldtype": "Text",
+   "label": "L4/L5 Description"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "l4l5_percentage_completed",
+   "fieldtype": "Data",
+   "label": "L4/L5 Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "l4l5_status",
+   "fieldtype": "Select",
+   "label": "L4/L5 Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "l2l3_section_section",
+   "fieldtype": "Section Break",
+   "label": "L2/L3 Section"
+  },
+  {
+   "fieldname": "l2l3_planning_documents",
+   "fieldtype": "Attach",
+   "label": "L2/L3 Planning Documents"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "l2l3_description",
+   "fieldtype": "Text",
+   "label": "L2/L3 Description"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "l2l3_percentage_completed",
+   "fieldtype": "Data",
+   "label": "L2/L3 Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "l2l3_status",
+   "fieldtype": "Select",
+   "label": "L2/L3 Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved Date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Date",
+   "label": "Client Approved Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-06 16:48:35.208595",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "SCI Planning Document",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

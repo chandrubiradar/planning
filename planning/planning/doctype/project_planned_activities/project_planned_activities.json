@@ -6,19 +6,26 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "planned_activities"
+  "planned_activities",
+  "department"
  ],
  "fields": [
   {
    "fieldname": "planned_activities",
+   "fieldtype": "Link",
+   "label": "Planned Activities",
+   "options": "Task"
+  },
+  {
+   "fieldname": "department",
    "fieldtype": "Data",
-   "label": "Planned Activities"
+   "label": "Department"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2023-02-13 17:57:55.542138",
+ "modified": "2023-04-10 17:06:16.924243",
  "modified_by": "Administrator",
  "module": "Planning",
  "name": "Project Planned Activities",

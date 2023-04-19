@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "naming_series:",
- "creation": "2023-02-02 16:01:33.212358",
+ "creation": "2023-02-27 13:51:18.870109",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
@@ -17,7 +17,7 @@
   "end_date",
   "won_count",
   "column_break_6",
-  "campaign",
+  "campaign_id",
   "campaign_description",
   "wons",
   "column_break_23",
@@ -170,10 +170,10 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "campaign",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Campaign"
+   "fieldname": "campaign_id",
+   "fieldtype": "Link",
+   "label": "Campaign ID",
+   "options": "Mashhor Campaign"
   },
   {
    "fieldname": "campaign_description",
@@ -186,16 +186,15 @@
    "label": "WONs"
   },
   {
-   "allow_on_submit": 1,
-   "fieldname": "won_details",
-   "fieldtype": "Link",
-   "label": "WON ",
-   "options": "Project"
-  },
-  {
    "fieldname": "column_break_23",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Overall Percentage and Status"
+  },
+  {
+   "fieldname": "completed",
+   "fieldtype": "Select",
+   "label": "%Completed"
   },
   {
    "fieldname": "status",
@@ -204,8 +203,26 @@
    "options": "Pending\nCompleted"
   },
   {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "won_percentage_details",
+   "fieldtype": "Button",
+   "label": "WON Percentage Details"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "won_details",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "WON ",
+   "options": "Project"
+  },
+  {
    "fieldname": "design_document_section_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Design Document Section"
   },
   {
@@ -252,6 +269,7 @@
   {
    "fieldname": "column_break_10",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "CSS Document Section"
   },
   {
@@ -299,6 +317,7 @@
   {
    "fieldname": "construction_document_section_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Construction Document Section"
   },
   {
@@ -345,6 +364,7 @@
   {
    "fieldname": "planning_document_section_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Planning Document Section"
   },
   {
@@ -391,6 +411,7 @@
   {
    "fieldname": "hse_section_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "HSE Section"
   },
   {
@@ -437,6 +458,7 @@
   {
    "fieldname": "qc_document_section_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "QC Document Section"
   },
   {
@@ -483,6 +505,7 @@
   {
    "fieldname": "material_document_section_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Material Document Section"
   },
   {
@@ -529,6 +552,7 @@
   {
    "fieldname": "bagtag_document_section_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "BagTag Document Section"
   },
   {
@@ -575,6 +599,7 @@
   {
    "fieldname": "qs_document_section_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "QS Document Section"
   },
   {
@@ -626,26 +651,12 @@
    "options": "Campaign Readiness",
    "print_hide": 1,
    "read_only": 1
-  },
-  {
-   "fieldname": "completed",
-   "fieldtype": "Float",
-   "label": "%Completed"
-  },
-  {
-   "fieldname": "column_break_17",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "won_percentage_details",
-   "fieldtype": "Button",
-   "label": "WON Percentage Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-02-24 22:50:52.195481",
+ "modified": "2023-04-18 16:01:05.015783",
  "modified_by": "Administrator",
  "module": "Planning",
  "name": "Campaign Readiness",

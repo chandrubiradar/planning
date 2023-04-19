@@ -12,10 +12,12 @@
   "naming_series",
   "contract",
   "target_completion_date",
+  "co_ordinator_approved_date",
   "column_break_4",
   "project_id",
   "campaign",
   "completed",
+  "client_approved_date",
   "column_break_6",
   "won",
   "status",
@@ -94,7 +96,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "l4l5_section_section",
@@ -157,7 +159,7 @@
    "fieldtype": "Select",
    "hidden": 1,
    "label": "Based On",
-   "options": "\nCampaign Readiness\nProject Readiness"
+   "options": "\nCampaign Readiness Test 1\nProject Readiness"
   },
   {
    "depends_on": "eval:doc.based_on == 'Project Readiness'",
@@ -190,11 +192,21 @@
    "fieldname": "l4l5_description",
    "fieldtype": "Text",
    "label": "L4/L5 Description"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved Date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Date",
+   "label": "Client Approved Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-23 13:32:41.855212",
+ "modified": "2023-04-06 16:49:29.105696",
  "modified_by": "Administrator",
  "module": "Planning",
  "name": "Planning Document",

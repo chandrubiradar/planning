@@ -10,20 +10,26 @@
   "naming_series",
   "contract",
   "completed",
+  "co_ordinator_approved_date",
   "column_break_4",
   "project_id",
   "status",
+  "client_approved_date",
   "column_break_6",
   "target_completion_date",
   "l4l5_section_section",
   "l4l5_planning_documents",
   "column_break_11",
-  "l4l5_percentage_completed",
+  "l4l5_description",
   "column_break_13",
+  "l4l5_percentage_completed",
+  "column_break_15",
   "l4l5_status",
   "l2l3_section_section",
   "l2l3_planning_documents",
   "column_break_17",
+  "l2l3_description",
+  "column_break_21",
   "l2l3_percentage_completed",
   "column_break_19",
   "l2l3_status"
@@ -57,8 +63,9 @@
   },
   {
    "fieldname": "project_id",
-   "fieldtype": "Data",
-   "label": "Project ID"
+   "fieldtype": "Link",
+   "label": "Project ID",
+   "options": "Mashhor Project"
   },
   {
    "default": "0",
@@ -75,7 +82,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "l4l5_section_section",
@@ -136,11 +143,39 @@
    "fieldtype": "Select",
    "label": "L2/L3 Status",
    "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "l4l5_description",
+   "fieldtype": "Text",
+   "label": "L4L5 Description"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "l2l3_description",
+   "fieldtype": "Text",
+   "label": "L2L3 Description"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved Date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Date",
+   "label": "Client Approved Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-20 17:36:08.276780",
+ "modified": "2023-04-05 13:21:33.595019",
  "modified_by": "Administrator",
  "module": "Planning",
  "name": "Project Planning Document",

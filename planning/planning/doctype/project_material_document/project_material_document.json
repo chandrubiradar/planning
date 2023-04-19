@@ -10,20 +10,26 @@
   "naming_series",
   "contract",
   "completed",
+  "co_ordinator_approved_date",
   "column_break_4",
   "project_id",
   "status",
+  "client_approved_date",
   "column_break_8",
   "target_completion_date",
   "y_matl_mgc_section",
   "y_matl_mgc",
   "column_break_11",
-  "y_matl_percentage_completed",
+  "y_description",
   "column_break_13",
+  "y_matl_percentage_completed",
+  "column_break_15",
   "y_status",
   "o_matl_mgc_section",
   "o_matl_mgc",
   "column_break_17",
+  "o_description",
+  "column_break_21",
   "o_matl_percentage_completed",
   "column_break_19",
   "o_status"
@@ -55,15 +61,16 @@
   },
   {
    "fieldname": "project_id",
-   "fieldtype": "Data",
-   "label": "Project ID"
+   "fieldtype": "Link",
+   "label": "Project ID",
+   "options": "Mashhor Project"
   },
   {
    "default": "In Progress",
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "column_break_8",
@@ -134,11 +141,39 @@
    "fieldtype": "Select",
    "label": "O Status",
    "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "y_description",
+   "fieldtype": "Text",
+   "label": "Y Description"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "o_description",
+   "fieldtype": "Text",
+   "label": "O Description"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved Date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Date",
+   "label": "Client Approved Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-20 17:48:58.005487",
+ "modified": "2023-04-05 13:27:05.335163",
  "modified_by": "Administrator",
  "module": "Planning",
  "name": "Project Material Document",

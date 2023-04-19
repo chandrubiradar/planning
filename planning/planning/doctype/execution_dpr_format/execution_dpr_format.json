@@ -14,6 +14,8 @@
   "won",
   "section_break_6",
   "activity_table",
+  "remarks_section",
+  "remarks",
   "amended_from"
  ],
  "fields": [
@@ -60,11 +62,22 @@
    "options": "Execution DPR Format",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Table",
+   "label": "Remarks",
+   "options": "Execution DPR Table"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-03-17 15:23:25.889006",
+ "modified": "2023-03-31 19:00:56.147434",
  "modified_by": "Administrator",
  "module": "Planning",
  "name": "Execution DPR Format",

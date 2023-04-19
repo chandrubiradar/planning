@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-31 18:46:59.156419",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "npt",
+  "start",
+  "finish",
+  "total_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "npt",
+   "fieldtype": "Data",
+   "label": "NPT"
+  },
+  {
+   "fieldname": "start",
+   "fieldtype": "Date",
+   "label": "Start"
+  },
+  {
+   "fieldname": "finish",
+   "fieldtype": "Date",
+   "label": "Finish"
+  },
+  {
+   "fieldname": "total_time",
+   "fieldtype": "Data",
+   "label": "Total Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-31 19:04:52.639666",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "Execution DPR Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

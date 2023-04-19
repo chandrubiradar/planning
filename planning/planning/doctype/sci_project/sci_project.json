@@ -21,6 +21,8 @@
   "expected_end_date",
   "priority",
   "department",
+  "area",
+  "location",
   "customer_details",
   "customer",
   "column_break_14",
@@ -453,13 +455,23 @@
    "fieldtype": "Text",
    "label": "Message",
    "mandatory_depends_on": "collect_progress"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
   }
  ],
  "icon": "fa fa-puzzle-piece",
  "index_web_pages_for_search": 1,
  "links": [],
  "max_attachments": 4,
- "modified": "2023-03-17 16:29:41.026013",
+ "modified": "2023-04-03 21:22:23.006346",
  "modified_by": "Administrator",
  "module": "Planning",
  "name": "SCI Project",

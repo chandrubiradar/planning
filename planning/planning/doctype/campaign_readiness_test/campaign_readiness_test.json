@@ -17,7 +17,7 @@
   "end_date",
   "won_count",
   "column_break_6",
-  "campaign",
+  "campaign_id",
   "campaign_description",
   "wons",
   "column_break_23",
@@ -168,12 +168,6 @@
   {
    "fieldname": "column_break_6",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "campaign",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Campaign"
   },
   {
    "fieldname": "campaign_description",
@@ -660,12 +654,18 @@
    "options": "Campaign Readiness Test",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "campaign_id",
+   "fieldtype": "Link",
+   "label": "Campaign ID",
+   "options": "Mashhor Campaign"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-03-01 16:18:42.514041",
+ "modified": "2023-03-30 18:32:41.291544",
  "modified_by": "Administrator",
  "module": "Planning",
  "name": "Campaign Readiness Test",

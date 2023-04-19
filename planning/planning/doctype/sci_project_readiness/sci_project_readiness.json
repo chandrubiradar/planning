@@ -1,0 +1,640 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-04-03 20:00:51.954050",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "workflow_state",
+  "naming_series",
+  "contract",
+  "year",
+  "arealocation",
+  "work_based_on",
+  "column_break_6",
+  "project_name",
+  "won_details",
+  "start_date",
+  "end_date",
+  "list",
+  "campaign",
+  "campaign_description",
+  "wons",
+  "column_break_23",
+  "completed",
+  "status",
+  "design_document_section_section",
+  "cirass_document",
+  "column_break_58",
+  "cirass_status",
+  "column_break_61",
+  "cirass",
+  "column_break_80",
+  "check_69",
+  "column_break_10",
+  "css_document",
+  "column_break_98",
+  "css_status",
+  "column_break_22",
+  "css",
+  "column_break_19",
+  "check_20",
+  "section_break_18",
+  "project_documents",
+  "column_break_33",
+  "project_status",
+  "column_break_25",
+  "data_36",
+  "column_break_32",
+  "check_27",
+  "section_break_22",
+  "planning_document",
+  "column_break_28",
+  "planning_status",
+  "column_break_31",
+  "planning",
+  "column_break_40",
+  "check_34",
+  "section_break_28",
+  "hse_document",
+  "column_break_34",
+  "hse_status",
+  "column_break_37",
+  "hse",
+  "column_break_48",
+  "check_41",
+  "section_break_32",
+  "qc_document",
+  "column_break_41",
+  "qc_status",
+  "column_break_90",
+  "qc",
+  "column_break_56",
+  "check_48",
+  "material_document_section_section",
+  "material_document",
+  "column_break_46",
+  "material_status",
+  "column_break_49",
+  "material",
+  "column_break_64",
+  "check_55",
+  "bagtag_document_section_section",
+  "bag_and_tag",
+  "column_break_52",
+  "bagtag_status",
+  "column_break_55",
+  "bagtag",
+  "column_break_72",
+  "check_62",
+  "qs_document_section_section",
+  "qs_document",
+  "column_break_65",
+  "qs_status",
+  "column_break_67",
+  "qs",
+  "column_break_88",
+  "check_76",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Workflow State",
+   "options": "Workflow State"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "Proj-Read-.####"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Contract",
+   "options": "Contract",
+   "reqd": 1
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "fieldname": "arealocation",
+   "fieldtype": "Data",
+   "label": "Area/Location"
+  },
+  {
+   "fieldname": "work_based_on",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Work Based On",
+   "options": "\nCampaign\nProject_"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Link",
+   "label": "Project ID",
+   "options": "SCI Project"
+  },
+  {
+   "fieldname": "won_details",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "WON ",
+   "options": "Project"
+  },
+  {
+   "fetch_from": "project_name.expected_start_date",
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fetch_from": "project_name.expected_end_date",
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "list",
+   "fieldtype": "Table MultiSelect",
+   "hidden": 1,
+   "label": "List",
+   "options": "Project List"
+  },
+  {
+   "depends_on": "eval:doc.work_based_on=='Campaign'",
+   "fieldname": "campaign",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Campaign"
+  },
+  {
+   "depends_on": "eval:doc.work_based_on=='Campaign'",
+   "fieldname": "campaign_description",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Campaign Description"
+  },
+  {
+   "fieldname": "wons",
+   "fieldtype": "Text",
+   "hidden": 1,
+   "label": "WONs"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Section Break",
+   "label": "Overall Percentage and Status"
+  },
+  {
+   "fieldname": "completed",
+   "fieldtype": "Data",
+   "label": "Completed"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nCompleted"
+  },
+  {
+   "fieldname": "design_document_section_section",
+   "fieldtype": "Section Break",
+   "label": "Design Document Section"
+  },
+  {
+   "fieldname": "cirass_document",
+   "fieldtype": "Link",
+   "label": "Design Workpack Document",
+   "options": "Project Design Workpack Document"
+  },
+  {
+   "fieldname": "column_break_58",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cirass_status",
+   "fieldtype": "Data",
+   "label": "Design Status"
+  },
+  {
+   "fieldname": "column_break_61",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fetch_from": "cirass_document.completed",
+   "fieldname": "cirass",
+   "fieldtype": "Data",
+   "label": "Design%"
+  },
+  {
+   "fieldname": "column_break_80",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "check_69",
+   "fieldtype": "Check",
+   "label": "Readiness Indicator"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Section Break",
+   "label": "CSS Document Section"
+  },
+  {
+   "fieldname": "css_document",
+   "fieldtype": "Link",
+   "label": "CSS Document",
+   "options": "Project CSS Document"
+  },
+  {
+   "fieldname": "column_break_98",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "css_status",
+   "fieldtype": "Data",
+   "label": "CSS Status"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "css",
+   "fieldtype": "Data",
+   "label": "CSS%"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "check_20",
+   "fieldtype": "Check",
+   "label": "Readiness Indicator"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break",
+   "label": "Construction Document Section"
+  },
+  {
+   "fieldname": "project_documents",
+   "fieldtype": "Link",
+   "label": "Construction Documents",
+   "options": "Project Construction Document"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_status",
+   "fieldtype": "Data",
+   "label": "Construction Status"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fetch_from": "project_document.completed",
+   "fieldname": "data_36",
+   "fieldtype": "Data",
+   "label": "Construction%"
+  },
+  {
+   "fieldname": "column_break_32",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "check_27",
+   "fieldtype": "Check",
+   "label": "Readiness Indicator"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break",
+   "label": "Planning Document Section"
+  },
+  {
+   "fieldname": "planning_document",
+   "fieldtype": "Link",
+   "label": "Planning Document",
+   "options": "Project Planning Document"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "planning_status",
+   "fieldtype": "Data",
+   "label": "Planning Status"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fetch_from": "planning_document.completed",
+   "fieldname": "planning",
+   "fieldtype": "Data",
+   "label": "Planning%"
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "check_34",
+   "fieldtype": "Check",
+   "label": "Readiness Indicator"
+  },
+  {
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break",
+   "label": "HSE Document Section"
+  },
+  {
+   "fieldname": "hse_document",
+   "fieldtype": "Link",
+   "label": "HSE Document",
+   "options": "Project HSE Document"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hse_status",
+   "fieldtype": "Data",
+   "label": "HSE Status"
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fetch_from": "hse_document.completed",
+   "fieldname": "hse",
+   "fieldtype": "Data",
+   "label": "HSE%"
+  },
+  {
+   "fieldname": "column_break_48",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "check_41",
+   "fieldtype": "Check",
+   "label": "Readiness Indicator"
+  },
+  {
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break",
+   "label": "QC Document Section"
+  },
+  {
+   "fieldname": "qc_document",
+   "fieldtype": "Link",
+   "label": "QC Document",
+   "options": "Project QC Document"
+  },
+  {
+   "fieldname": "column_break_41",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qc_status",
+   "fieldtype": "Data",
+   "label": "QC Status"
+  },
+  {
+   "fieldname": "column_break_90",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fetch_from": "qc_document.completed",
+   "fieldname": "qc",
+   "fieldtype": "Data",
+   "label": "QC%"
+  },
+  {
+   "fieldname": "column_break_56",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "check_48",
+   "fieldtype": "Check",
+   "label": "Readiness Indicator"
+  },
+  {
+   "fieldname": "material_document_section_section",
+   "fieldtype": "Section Break",
+   "label": "Material Document Section"
+  },
+  {
+   "fieldname": "material_document",
+   "fieldtype": "Link",
+   "label": "Material Document",
+   "options": "Project Material Document"
+  },
+  {
+   "fieldname": "column_break_46",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "material_status",
+   "fieldtype": "Data",
+   "label": "Material Status"
+  },
+  {
+   "fieldname": "column_break_49",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fetch_from": "material_document.completed",
+   "fieldname": "material",
+   "fieldtype": "Data",
+   "label": "Material%"
+  },
+  {
+   "fieldname": "column_break_64",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "check_55",
+   "fieldtype": "Check",
+   "label": "Readiness Indicator"
+  },
+  {
+   "fieldname": "bagtag_document_section_section",
+   "fieldtype": "Section Break",
+   "label": "BagTag Document Section"
+  },
+  {
+   "fieldname": "bag_and_tag",
+   "fieldtype": "Link",
+   "label": "Bag and Tag",
+   "options": "Project Bag and Tag"
+  },
+  {
+   "fieldname": "column_break_52",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bagtag_status",
+   "fieldtype": "Data",
+   "label": "BagTag Status"
+  },
+  {
+   "fieldname": "column_break_55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fetch_from": "bag_and_tag.completed",
+   "fieldname": "bagtag",
+   "fieldtype": "Data",
+   "label": "BagTag%"
+  },
+  {
+   "fieldname": "column_break_72",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "check_62",
+   "fieldtype": "Check",
+   "label": "Readiness Indicator"
+  },
+  {
+   "fieldname": "qs_document_section_section",
+   "fieldtype": "Section Break",
+   "label": "QS Document Section"
+  },
+  {
+   "fieldname": "qs_document",
+   "fieldtype": "Link",
+   "label": "QS Document",
+   "options": "Project QS Document"
+  },
+  {
+   "fieldname": "column_break_65",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qs_status",
+   "fieldtype": "Data",
+   "label": "QS Status"
+  },
+  {
+   "fieldname": "column_break_67",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fetch_from": "qs_document.completed",
+   "fieldname": "qs",
+   "fieldtype": "Data",
+   "label": "QS%"
+  },
+  {
+   "fieldname": "column_break_88",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "check_76",
+   "fieldtype": "Check",
+   "label": "Readiness Indicator"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SCI Project Readiness",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "SCI Project Readiness",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-04-03 21:20:11.940931",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "SCI Project Readiness",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "set_user_permissions": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_views": 1
+}

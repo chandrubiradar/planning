@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format: {sci_project}/{date}",
+ "creation": "2023-04-03 18:10:46.418215",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "daily_progress",
+  "sci_project",
+  "column_break_2",
+  "date",
+  "section_break_4",
+  "activity_table",
+  "next_day_activity",
+  "remarks_section",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "daily_progress",
+   "fieldtype": "Data",
+   "label": "Daily Progress"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "activity_table",
+   "fieldtype": "Table",
+   "label": "Activity Table",
+   "options": "Execution DPR Activity Table"
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Table",
+   "label": "Remarks",
+   "options": "Execution DPR Table"
+  },
+  {
+   "fieldname": "sci_project",
+   "fieldtype": "Link",
+   "label": "SCI Project",
+   "options": "SCI Project"
+  },
+  {
+   "fieldname": "next_day_activity",
+   "fieldtype": "Table",
+   "label": "Next Day Activity",
+   "options": "Next Day Execution DPR Activity Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-03 18:39:29.777852",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "SCI Project Execution DPR",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

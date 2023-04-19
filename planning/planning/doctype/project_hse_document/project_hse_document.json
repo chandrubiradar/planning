@@ -10,26 +10,34 @@
   "naming_series",
   "contract",
   "completed",
+  "co_ordinator_approved_date",
   "column_break_4",
   "project_id",
   "status",
+  "client_approved_date",
   "column_break_8",
   "target_completion_date",
   "hra_section_section",
   "hra",
   "column_break_11",
-  "hra_percentage_completed",
+  "hra_description",
   "column_break_13",
+  "hra_percentage_completed",
+  "column_break_15",
   "hra_status",
   "erp_section_section",
   "erp",
   "column_break_17",
+  "erp_description",
+  "column_break_21",
   "erp_percentage_completed",
   "column_break_19",
   "erp_status",
   "hazid_section_section",
   "hazid",
   "column_break_23",
+  "hazid_description",
+  "column_break_29",
   "hazid_percentage_completed",
   "column_break_25",
   "hazid_status"
@@ -63,8 +71,9 @@
   },
   {
    "fieldname": "project_id",
-   "fieldtype": "Data",
-   "label": "Project ID"
+   "fieldtype": "Link",
+   "label": "Project ID",
+   "options": "Mashhor Project"
   },
   {
    "fieldname": "completed",
@@ -81,7 +90,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "hra_section_section",
@@ -171,11 +180,48 @@
    "fieldtype": "Select",
    "label": "HAZID Status",
    "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "hra_description",
+   "fieldtype": "Data",
+   "label": "HRA Description"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "erp_description",
+   "fieldtype": "Text",
+   "label": "ERP Description"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hazid_description",
+   "fieldtype": "Text",
+   "label": "HAZID Description"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved Date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Date",
+   "label": "Client Approved Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-20 17:39:53.484106",
+ "modified": "2023-04-05 13:24:41.329569",
  "modified_by": "Administrator",
  "module": "Planning",
  "name": "Project HSE Document",

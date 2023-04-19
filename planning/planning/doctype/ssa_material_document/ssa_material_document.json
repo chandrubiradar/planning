@@ -1,0 +1,175 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Material-{project_id}",
+ "creation": "2023-04-04 15:37:41.516172",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "contract",
+  "completed",
+  "co_ordinator_approved_date",
+  "column_break_4",
+  "stand_alone_id",
+  "status",
+  "client_approved_date",
+  "column_break_8",
+  "target_completion_date",
+  "y_matl_mgc_section",
+  "y_matl_mgc",
+  "column_break_11",
+  "y_matl_percentage_completed",
+  "column_break_13",
+  "y_status",
+  "o_matl_mgc_section",
+  "o_matl_mgc",
+  "column_break_17",
+  "o_matl_percentage_completed",
+  "column_break_19",
+  "o_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "Material-.####"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Contract",
+   "options": "Contract",
+   "reqd": 1
+  },
+  {
+   "fieldname": "completed",
+   "fieldtype": "Data",
+   "label": "%Completed"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stand_alone_id",
+   "fieldtype": "Link",
+   "label": "Stand Alone ID",
+   "options": "SCI Stand Alone"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "target_completion_date",
+   "fieldtype": "Date",
+   "label": "Target Completion Date"
+  },
+  {
+   "fieldname": "y_matl_mgc_section",
+   "fieldtype": "Section Break",
+   "label": "Y Matl MGC"
+  },
+  {
+   "fieldname": "y_matl_mgc",
+   "fieldtype": "Attach",
+   "label": "Y Matl MGC"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "y_matl_percentage_completed",
+   "fieldtype": "Data",
+   "label": "Y Matl Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "y_status",
+   "fieldtype": "Select",
+   "label": "Y Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "o_matl_mgc_section",
+   "fieldtype": "Section Break",
+   "label": "O Matl MGC"
+  },
+  {
+   "fieldname": "o_matl_mgc",
+   "fieldtype": "Attach",
+   "label": "O Matl MGC"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "o_matl_percentage_completed",
+   "fieldtype": "Data",
+   "label": "O Matl Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "o_status",
+   "fieldtype": "Select",
+   "label": "O Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved Date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Date",
+   "label": "Client Approved Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-06 17:11:03.328610",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "SSA Material Document",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -10,46 +10,60 @@
   "naming_series",
   "contract",
   "completed",
+  "co_ordinator_approved_date",
   "column_break_5",
   "project_id",
   "status",
-  "column_break_13",
+  "client_approved_date",
+  "column_break_7",
   "target_completion_date",
   "welding_section_section",
   "welding_inspection",
   "column_break_18",
+  "welding_description",
+  "column_break_13",
   "welding_percentage_completed",
   "column_break_20",
   "welding__status",
   "qc_section_section",
   "qc_document",
   "column_break_12",
+  "hydro_description",
+  "column_break_21",
   "qc_percentage_completed",
   "column_break_14",
   "hydro_status",
   "blasting_section_section",
   "blasting",
   "column_break_24",
+  "blasting_description",
+  "column_break_29",
   "blasting_percentage_completed",
   "column_break_26",
   "blasting__status",
   "painting_section_section",
   "painting",
   "column_break_30",
+  "painting_description",
+  "column_break_37",
   "painting_percentage_completed",
   "column_break_32",
   "painting__status",
   "site_installation_section_section",
   "site_installation",
-  "column_break_37",
+  "column_break_43",
+  "site_inst_description",
+  "column_break_45",
   "site_installation_percentage",
   "column_break_39",
   "site_inst_status",
   "qcdp_section_section",
   "qcdp",
-  "column_break_43",
+  "column_break_51",
+  "qcdp_description",
+  "column_break_53",
   "qcdp_percentage",
-  "column_break_45",
+  "column_break_55",
   "qcdp_status"
  ],
  "fields": [
@@ -81,8 +95,9 @@
   },
   {
    "fieldname": "project_id",
-   "fieldtype": "Data",
-   "label": "Project ID"
+   "fieldtype": "Link",
+   "label": "Project ID",
+   "options": "Mashhor Project"
   },
   {
    "fieldname": "completed",
@@ -99,7 +114,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "welding_section_section",
@@ -279,11 +294,75 @@
    "fieldtype": "Select",
    "label": "QCDP Status",
    "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "welding_description",
+   "fieldtype": "Text",
+   "label": "Welding Description"
+  },
+  {
+   "fieldname": "hydro_description",
+   "fieldtype": "Text",
+   "label": "Hydro Description"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "blasting_description",
+   "fieldtype": "Text",
+   "label": "Blasting Description"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "painting_description",
+   "fieldtype": "Text",
+   "label": "Painting Description"
+  },
+  {
+   "fieldname": "site_inst_description",
+   "fieldtype": "Text",
+   "label": "Site Inst Description"
+  },
+  {
+   "fieldname": "column_break_51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qcdp_description",
+   "fieldtype": "Text",
+   "label": "QCDP Description"
+  },
+  {
+   "fieldname": "column_break_53",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved Date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Date",
+   "label": "Client Approved Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-20 17:44:27.340892",
+ "modified": "2023-04-05 13:25:41.422657",
  "modified_by": "Administrator",
  "module": "Planning",
  "name": "Project QC Document",

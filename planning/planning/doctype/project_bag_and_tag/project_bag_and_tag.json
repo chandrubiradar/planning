@@ -10,16 +10,20 @@
   "naming_series",
   "contract",
   "completed",
+  "co_ordinator_approved_date",
   "column_break_3",
   "project_id",
   "status",
+  "client_approved_date",
   "column_break_6",
   "target_completion_date",
   "bag_and_tag_section",
   "bag_and_tag",
   "column_break_11",
-  "bag_and_tag_completed",
+  "bagtag_description",
   "column_break_13",
+  "bag_and_tag_completed",
+  "column_break_15",
   "bag_and_tag_status",
   "bagtag_status"
  ],
@@ -52,8 +56,9 @@
   },
   {
    "fieldname": "project_id",
-   "fieldtype": "Data",
-   "label": "Project ID"
+   "fieldtype": "Link",
+   "label": "Project ID",
+   "options": "Mashhor Project"
   },
   {
    "fieldname": "completed",
@@ -70,7 +75,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "bag_and_tag_section",
@@ -106,11 +111,30 @@
    "fieldtype": "Select",
    "label": "BagTag Status",
    "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "bagtag_description",
+   "fieldtype": "Text",
+   "label": "BagTag Description"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved Date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Date",
+   "label": "Client Approved Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-20 18:28:58.131827",
+ "modified": "2023-04-05 13:28:46.884932",
  "modified_by": "Administrator",
  "module": "Planning",
  "name": "Project Bag and Tag",

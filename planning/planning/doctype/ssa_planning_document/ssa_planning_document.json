@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Planning-{project_id}",
+ "creation": "2023-04-04 15:33:21.175929",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "contract",
+  "completed",
+  "co_ordinator_approved_date",
+  "column_break_4",
+  "stand_alone_id",
+  "status",
+  "client_approved_date",
+  "column_break_6",
+  "target_completion_date",
+  "l4l5_section_section",
+  "l4l5_planning_documents",
+  "column_break_11",
+  "l4l5_percentage_completed",
+  "column_break_13",
+  "l4l5_status",
+  "l2l3_section_section",
+  "l2l3_planning_documents",
+  "column_break_17",
+  "l2l3_percentage_completed",
+  "column_break_19",
+  "l2l3_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "Planning-.####"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Contract",
+   "options": "Contract",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "completed",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "%Completed"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stand_alone_id",
+   "fieldtype": "Link",
+   "label": "Stand Alone ID",
+   "options": "SCI Stand Alone"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "target_completion_date",
+   "fieldtype": "Date",
+   "label": "Target Completion Date"
+  },
+  {
+   "fieldname": "l4l5_section_section",
+   "fieldtype": "Section Break",
+   "label": "L4/L5 Section"
+  },
+  {
+   "fieldname": "l4l5_planning_documents",
+   "fieldtype": "Attach",
+   "label": "L4/L5 Planning Documents"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "l4l5_percentage_completed",
+   "fieldtype": "Data",
+   "label": "L4/L5 Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "l4l5_status",
+   "fieldtype": "Select",
+   "label": "L4/L5 Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "l2l3_section_section",
+   "fieldtype": "Section Break",
+   "label": "L2/L3 Section"
+  },
+  {
+   "fieldname": "l2l3_planning_documents",
+   "fieldtype": "Attach",
+   "label": "L2/L3 Planning Documents"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "l2l3_percentage_completed",
+   "fieldtype": "Data",
+   "label": "L2/L3 Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "l2l3_status",
+   "fieldtype": "Select",
+   "label": "L2/L3 Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved Date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Date",
+   "label": "Client Approved Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-06 16:47:37.292488",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "SSA Planning Document",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

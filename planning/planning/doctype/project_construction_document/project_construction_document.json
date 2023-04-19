@@ -14,19 +14,25 @@
   "column_break_5",
   "project_id",
   "design_staff_holding",
+  "co_ordinator_approved_date",
   "column_break_9",
   "target_completion_date",
   "completed",
+  "client_approved_date",
   "mos_section_section",
   "mos",
   "column_break_13",
-  "mos_percentage_completed",
+  "mos_description",
   "column_break_15",
+  "mos_percentage_completed",
+  "column_break_17",
   "mos_status",
   "mos_status_section",
   "jha_section_section",
   "jha",
   "column_break_19",
+  "jha_description",
+  "column_break_24",
   "jha_percentage_completed",
   "column_break_21",
   "jha_status",
@@ -34,6 +40,8 @@
   "cse_section_section",
   "cse",
   "column_break_25",
+  "cse_description",
+  "column_break_33",
   "cse_percentage_completed",
   "column_break_27",
   "cse_status",
@@ -41,13 +49,17 @@
   "lifting_plan_section_section",
   "lifting_plan",
   "column_break_31",
+  "lifting_description",
+  "column_break_42",
   "lifting_percentage_completed",
-  "column_break_33",
+  "column_break_44",
   "lifting__status",
   "lifting_status",
   "construction_section_section",
   "construction_document",
   "column_break_4",
+  "other_description",
+  "column_break_51",
   "construction_percentage_completed",
   "column_break_6",
   "construction_status",
@@ -87,8 +99,9 @@
   },
   {
    "fieldname": "project_id",
-   "fieldtype": "Data",
-   "label": "Project ID"
+   "fieldtype": "Link",
+   "label": "Project ID",
+   "options": "Mashhor Project"
   },
   {
    "default": "0",
@@ -111,7 +124,7 @@
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",
-   "options": "In Progress\nCompleted\nSent for Approval\nApproved"
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
   },
   {
    "fieldname": "mos_section_section",
@@ -292,11 +305,66 @@
    "fieldtype": "Select",
    "label": "Others_Status",
    "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "mos_description",
+   "fieldtype": "Text",
+   "label": "Mos Description"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jha_description",
+   "fieldtype": "Text",
+   "label": "JHA Description"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cse_description",
+   "fieldtype": "Text",
+   "label": "CSE Description"
+  },
+  {
+   "fieldname": "lifting_description",
+   "fieldtype": "Text",
+   "label": "Lifting Description"
+  },
+  {
+   "fieldname": "column_break_42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "other_description",
+   "fieldtype": "Text",
+   "label": "Other Description"
+  },
+  {
+   "fieldname": "column_break_51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved Date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Date",
+   "label": "Client Approved Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-02-20 17:31:24.437888",
+ "modified": "2023-04-05 13:20:40.560381",
  "modified_by": "Administrator",
  "module": "Planning",
  "name": "Project Construction Document",

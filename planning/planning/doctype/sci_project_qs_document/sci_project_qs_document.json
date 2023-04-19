@@ -1,0 +1,186 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:QS-{project_id}",
+ "creation": "2023-04-03 19:58:15.050256",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "workflow_state",
+  "contract",
+  "completed",
+  "co_ordinator_approved_date",
+  "column_break_5",
+  "project_id",
+  "status",
+  "client_approved_date",
+  "column_break_8",
+  "target_completion_date",
+  "pcm_section_section",
+  "pcm",
+  "column_break_12",
+  "pcm_percentage_completed",
+  "column_break_14",
+  "pcm_status",
+  "po_section_section",
+  "po",
+  "column_break_58",
+  "po_percentage_completed",
+  "column_break_20",
+  "po_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Naming Series",
+   "options": "QS-.####"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Workflow State",
+   "options": "Workflow State"
+  },
+  {
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Contract",
+   "options": "Contract",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "completed",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "%Completed"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "project_id",
+   "fieldtype": "Link",
+   "label": "Project ID",
+   "options": "SCI Project"
+  },
+  {
+   "default": "In Progress",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "In Progress\nCompleted\nSent for Approval\nApproved Internally\nSent for Client Approval\nApproved by Client"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "target_completion_date",
+   "fieldtype": "Date",
+   "label": "Target Completion Date"
+  },
+  {
+   "fieldname": "pcm_section_section",
+   "fieldtype": "Section Break",
+   "label": "PCM Section"
+  },
+  {
+   "fieldname": "pcm",
+   "fieldtype": "Attach",
+   "label": "PCM"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "pcm_percentage_completed",
+   "fieldtype": "Data",
+   "label": "PCM Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pcm_status",
+   "fieldtype": "Select",
+   "label": "PCM Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "po_section_section",
+   "fieldtype": "Section Break",
+   "label": "PO Section"
+  },
+  {
+   "fieldname": "po",
+   "fieldtype": "Attach",
+   "label": "PO"
+  },
+  {
+   "fieldname": "column_break_58",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "po_percentage_completed",
+   "fieldtype": "Data",
+   "label": "PO Percentage Completed"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "po_status",
+   "fieldtype": "Select",
+   "label": "PO Status",
+   "options": "In Progress\nCompleted\nNot Applicable"
+  },
+  {
+   "fieldname": "co_ordinator_approved_date",
+   "fieldtype": "Date",
+   "label": "Co Ordinator Approved Date"
+  },
+  {
+   "fieldname": "client_approved_date",
+   "fieldtype": "Date",
+   "label": "Client Approved Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-05 13:32:38.977555",
+ "modified_by": "Administrator",
+ "module": "Planning",
+ "name": "SCI Project QS Document",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
